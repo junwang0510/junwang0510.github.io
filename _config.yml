@@ -30,4 +30,4 @@ gh_edit_repository: "https://github.com/junwang0510/junwang0510.github.io"
 gh_edit_branch: "master"
 gh_edit_view_mode: "tree"
 
-footer_content: "Copyright &copy; 2023 Jun Wang. Distributed by [MIT License](https://github.com/junwang0510/junwang0510.github.io/blob/main/LICENSE)"
+footer_content: "Copyright &copy; 2023 Jun Wang. Distributed by <a href=\"https://github.com/junwang0510/junwang0510.github.io/blob/main/LICENSE\">MIT license.</a>"
