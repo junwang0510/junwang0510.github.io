@@ -1,14 +1,33 @@
+# Basic Metadata
 title: Jun Wang
 description: Personal Website
 theme: just-the-docs
-
 url: https://junwang0510.github.io
 
+
+# Aux links for the upper right navigation
 aux_links:
   "LinkedIn":
   - "https://www.linkedin.com/in/junwang0510/"
   "GitHub":
   - "https://github.com/junwang0510"
-  "Insta":
+  "Instagram":
   - "https://www.instagram.com/junie_wangy/"
-  
+
+aux_links_new_tab: true
+
+
+# Footer Content
+back_to_top: true
+back_to_top_text: "Back to top"
+
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y at %I:%M %p"
+
+gh_edit_link: true
+gh_edit_link_text: "View this page's source code on GitHub"
+gh_edit_repository: "https://github.com/junwang0510/junwang0510.github.io"
+gh_edit_branch: "master"
+gh_edit_view_mode: "tree"
+
+footer_content: "Copyright &copy; 2023 Jun Wang. Distributed by [MIT License](https://github.com/junwang0510/junwang0510.github.io/blob/main/LICENSE)"
