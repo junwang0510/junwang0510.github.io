@@ -16,16 +16,24 @@ aux_links:
 aux_links_new_tab: true
 
 
-# Footer Content
+# Footer content
+# Back to top link
 back_to_top: true
 back_to_top_text: "Back to top"
 
-last_edit_timestamp: true
-last_edit_time_format: "%b %e %Y at %I:%M %p"
+footer_content: "Copyright &copy; 2023 Jun Wang. Distributed by an <a href=\"https://github.com/junwang0510/junwang0510.github.io/blob/main/LICENSE\">MIT license.</a>
 
-gh_edit_link: true
-gh_edit_link_text: "View this page's source code on GitHub"
-gh_edit_repository: "https://github.com/junwang0510/junwang0510.github.io"
-gh_edit_branch: "main"
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
-footer_content: "Copyright &copy; 2023 Jun Wang. Distributed by <a href=\"https://github.com/junwang0510/junwang0510.github.io/blob/main/LICENSE\">MIT license.</a>"
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/junwang0510/junwang0510.github.io" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+# Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
+color_scheme: nil
