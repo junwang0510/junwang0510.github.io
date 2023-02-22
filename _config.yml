@@ -5,4 +5,10 @@ theme: just-the-docs
 url: https://junwang0510.github.io
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  "LinkedIn":
+  - "https://www.linkedin.com/in/junwang0510/"
+  "GitHub":
+  - "https://github.com/junwang0510"
+  "Insta":
+  - "https://www.instagram.com/junie_wangy/"
+  
