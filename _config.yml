@@ -26,6 +26,8 @@ last_edit_time_format: "%b %e %Y at %I:%M %p"
 gh_edit_link: true
 gh_edit_link_text: "View this page's source code on GitHub"
 gh_edit_repository: "https://github.com/junwang0510/junwang0510.github.io"
+gh_edit_branch: "main"
 gh_edit_repository_new_tab: true
 
 footer_content: "Copyright &copy; 2023 Jun Wang. Distributed by <a href=\"https://github.com/junwang0510/junwang0510.github.io/blob/main/LICENSE\">MIT license.</a>"
+footer_content_new_tab: true
