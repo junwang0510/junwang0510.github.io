@@ -6,6 +6,8 @@ url: https://junwang0510.github.io
 
 # Aux links for the upper right navigation
 aux_links:
+  "Resume":
+  - "https://github.com/junwang0510/Resume/blob/main/Wang%2CJun.pdf"
   "LinkedIn":
   - "https://www.linkedin.com/in/junwang0510/"
   "GitHub":
