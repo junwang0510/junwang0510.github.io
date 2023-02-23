@@ -25,7 +25,7 @@ Undergraduate @ University of Washington
 
 **👋 Hey there! I'm Jun.** 
 
-I am majoring in [computer science](https://www.cs.washington.edu/).
+I am majoring in computer science and minoring in mathematics. My research interests in computer vision and Human-computer interaction. Currently, I am designing a multimodal (e.g., gaze, gestures, voice) voice assistant that can process ambiguous queries by humans (such as those containing anaphoras) with Jaewook Lee, Prof. Jon E. Froehlich, and others at [Makeability Lab](https://makeabilitylab.cs.washington.edu/). I am also an active member of [ARUW](https://aruw.org/), a robotics team that won multiple champions at [RoboMaster NA](https://www.robomasterna.com/). During my spare time, I practice card magic, [cardistry](https://en.wikipedia.org/wiki/Cardistry), calisthenics, chess, cubing, competitive programming ...
 
 Email: `junw3 AT cs.washington.edu`
 
