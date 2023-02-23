@@ -27,7 +27,7 @@ img {
 
 I am majoring in computer science and minoring in mathematics. My research interests in computer vision and Human-computer interaction. Currently, I am designing a multimodal (e.g., gaze, gestures, voice) voice assistant that can process ambiguous queries by humans (such as those containing anaphoras) with Jaewook Lee, Prof. Jon E. Froehlich, and others at [Makeability Lab](https://makeabilitylab.cs.washington.edu/). I am also an active member of [ARUW](https://aruw.org/), a robotics team that won multiple competitions at [RoboMaster NA](https://www.robomasterna.com/).
 
-📧 Email: `junw3 AT cs.washington.edu`
+📧 Email: `junwang0510@hotmail.com`
 
 <br>
 
