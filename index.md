@@ -12,7 +12,7 @@ img {
 }
 </style>
 
-<img src="./Photos/Jun_Wang.PNG" alt="profile photo" style="float: left; margin-right: 30px; max-height: 135px; width: auto;">
+<img src="./Images/Jun_Wang.PNG" alt="profile photo" style="float: left; margin-right: 30px; max-height: 135px; width: auto;">
 
 # Jun Wang
 {: .fs-9}

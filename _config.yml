@@ -20,3 +20,6 @@ aux_links_new_tab: true
 back_to_top: true
 back_to_top_text: "Back to top"
 footer_content: "Copyright &copy; 2023 Jun Wang. Distributed by an <a href=\"https://github.com/junwang0510/junwang0510.github.io/blob/main/LICENSE\">MIT license.</a>"
+
+# Favicon
+favicon_ico: "Images/magic_favicon.PNG"
