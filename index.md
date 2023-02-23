@@ -12,7 +12,7 @@ img {
 }
 </style>
 
-<img src="./Images/Jun_Wang.PNG" alt="profile photo" style="float: left; margin-right: 30px; max-height: 135px; width: auto;">
+<img src="assets/Images/Jun_Wang.PNG" alt="profile photo" style="float: left; margin-right: 30px; max-height: 135px; width: auto;">
 
 # Jun Wang
 {: .fs-9}
@@ -102,3 +102,21 @@ Competitive Programming
 {: .fs-6 .fw-400 }
 
 | **02/21/2023** Launched my personal website! Thank you [Just the Docs](https://just-the-docs.github.io/just-the-docs/)! |
+
+<br>
+
+<button class="btn js-toggle-dark-mode">Give yourself to the Dark Side!</button>
+
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  if (jtd.getTheme() === 'dark') {
+    jtd.setTheme('light');
+    toggleDarkMode.textContent = 'Give yourself to the Dark Side!';
+  } else {
+    jtd.setTheme('dark');
+    toggleDarkMode.textContent = 'Return to the Light Side!';
+  }
+});
+</script>
