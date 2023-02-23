@@ -98,7 +98,7 @@ Competitive Programming
 
 ---
 
-🔜 Updates
+🌍 Updates
 {: .fs-6 .fw-400 }
 
 | **02/21/2023** Launched my personal website! Thank you [Just the Docs](https://just-the-docs.github.io/just-the-docs/)! |
