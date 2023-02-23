@@ -25,10 +25,76 @@ Undergraduate @ University of Washington
 
 **👋 Hey there! I'm Jun.** 
 
-I am majoring in computer science and minoring in mathematics. My research interests in computer vision and Human-computer interaction. Currently, I am designing a multimodal (e.g., gaze, gestures, voice) voice assistant that can process ambiguous queries by humans (such as those containing anaphoras) with Jaewook Lee, Prof. Jon E. Froehlich, and others at [Makeability Lab](https://makeabilitylab.cs.washington.edu/). I am also an active member of [ARUW](https://aruw.org/), a robotics team that won multiple champions at [RoboMaster NA](https://www.robomasterna.com/). During my spare time, I practice card magic, [cardistry](https://en.wikipedia.org/wiki/Cardistry), calisthenics, chess, cubing, competitive programming ...
+I am majoring in computer science and minoring in mathematics. My research interests in computer vision and Human-computer interaction. Currently, I am designing a multimodal (e.g., gaze, gestures, voice) voice assistant that can process ambiguous queries by humans (such as those containing anaphoras) with Jaewook Lee, Prof. Jon E. Froehlich, and others at [Makeability Lab](https://makeabilitylab.cs.washington.edu/). I am also an active member of [ARUW](https://aruw.org/), a robotics team that won multiple champions at [RoboMaster NA](https://www.robomasterna.com/).
 
 Email: `junw3 AT cs.washington.edu`
 
+<br>
+
+**💻 Programming Languages**
+
+Java
+{: .label .label-blue }
+
+Python
+{: .label .label-green }
+
+C/C++
+{: .label .label-red }
+
+SQL
+{: .label .label-purple }
+
+JavaScript/TypeScript
+{: .label .label-yellow }
+
+HTML/CSS
+{: .label .label-default }
+
+**🔧 Technologies**
+
+Git
+{: .label .label-blue }
+
+LaTeX
+{: .label .label-green }
+
+Vim
+{: .label .label-red }
+
+Linux/Unix
+{: .label .label-purple }
+
+**💬 Human Languages**
+
+Mandarin (Native)
+{: .label .label-blue}
+
+English (Native)
+{: .label .label-green}
+
+Japanese (Professional)
+{: .label .label-red }
+
+**✨ Hobbies**
+
+Card Magic
+{: .label .label-blue }
+
+Cardistry
+{: .label .label-green }
+
+Calisthenics
+{: .label .label-red }
+
+Chess
+{: .label .label-purple }
+
+Cubing
+{: .label .label-yellow }
+
+Competitive Programming
+{: .label .label-default }
 ---
 
 Updates
