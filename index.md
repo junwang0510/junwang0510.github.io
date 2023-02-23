@@ -17,7 +17,7 @@ img {
 # Jun Wang
 {: .fs-9}
 
-Undergraduate @ University of Washington
+🎓 Undergraduate @ University of Washington
 {: .fs-6 .fw-300 }
 
 
@@ -27,7 +27,7 @@ Undergraduate @ University of Washington
 
 I am majoring in computer science and minoring in mathematics. My research interests in computer vision and Human-computer interaction. Currently, I am designing a multimodal (e.g., gaze, gestures, voice) voice assistant that can process ambiguous queries by humans (such as those containing anaphoras) with Jaewook Lee, Prof. Jon E. Froehlich, and others at [Makeability Lab](https://makeabilitylab.cs.washington.edu/). I am also an active member of [ARUW](https://aruw.org/), a robotics team that won multiple competitions at [RoboMaster NA](https://www.robomasterna.com/).
 
-Email: `junw3 AT cs.washington.edu`
+📧 Email: `junw3 AT cs.washington.edu`
 
 <br>
 
@@ -95,9 +95,10 @@ Cubing
 
 Competitive Programming
 {: .label .label-default }
+
 ---
 
-Updates
+🔜 Updates
 {: .fs-6 .fw-400 }
 
 | **02/21/2023** Launched my personal website! Thank you [Just the Docs](https://just-the-docs.github.io/just-the-docs/)! |
