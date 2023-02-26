@@ -25,7 +25,7 @@ img {
 
 **👋 Hello World! I'm Jun.** 
 
-I am majoring in computer science and minoring in mathematics. My research interests in computer vision and Human-computer interaction. Currently, I am designing a multimodal (e.g., gaze, gestures, voice) voice assistant that can process ambiguous queries by humans (such as those containing anaphoras) with Jaewook Lee, Prof. Jon E. Froehlich, and others at [Makeability Lab](https://makeabilitylab.cs.washington.edu/). I am also an active member of [ARUW](https://aruw.org/), a robotics team that won multiple competitions at [RoboMaster NA](https://www.robomasterna.com/).
+I am majoring in computer science and minoring in mathematics. My research interests in computer vision and Human-computer interaction. Currently, I am designing a multimodal (e.g., gaze, gestures, voice) voice assistant that can process ambiguous queries by humans (such as those containing anaphoras) with Jaewook Lee, Prof. Jon E. Froehlich, and others at [Makeability Lab](https://makeabilitylab.cs.washington.edu/). I am also an active member of [ARUW](https://aruw.org/), two-time champions at [RoboMaster NA](https://www.robomasterna.com/).
 
 📧 Email: `junwang0510@hotmail.com` &nbsp; &nbsp; 
 🏠 Location: [Seattle, WA](https://www.google.com/maps/place/Seattle,+WA/@47.6131742,-122.4824905,11z/data=!3m1!4b1!4m6!3m5!1s0x5490102c93e83355:0x102565466944d59a!8m2!3d47.6062095!4d-122.3320708!16zL20vMGQ5anI)
