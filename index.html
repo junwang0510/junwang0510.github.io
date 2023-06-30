@@ -19,6 +19,14 @@
             margin: 1em auto;
             line-height: 1.5;
           }
+          .image-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+          }
+          .text-container {
+            flex: 1;
+          }
         </style>
         <script>
           function openResume() {
@@ -27,12 +35,18 @@
         </script>
     </head>
     <body>
-        <h1>Jun Wang &nbsp; 王骏 &nbsp; おうしゆん</h1>
-        <img src="Leno.jpg" alt="self portrait" width="200" height="200">
-        <p>I am an undergraduate at the University of Washington, majoring in Computer Science (with departmental honors), advised by Prof. <a href="https://jonfroehlich.github.io/">Jon Froehlich</a>.</p>
+        <div class="image-container">
+            <img src="Leno.jpg" alt="self portrait" width="200" height="200">
+            <div class="text-container">
+                <h1>Jun Wang &nbsp; 王骏 &nbsp; おうしゆん</h1>
+                <p>Computer Science undergraduate at the University of Washington</p>
+                <p>Advised by Prof. <a href="https://jonfroehlich.github.io/">Jon Froehlich</a></p>
+                <p>Email: <a href="mailto:junw3@cs.washington.edu">junw3 [AT] cs.washington.edu</a></p>
+            </div>
+        </div>
         <p>My research interests lie in human-AI interaction and human-centered AI. Specifically, I focus on designing and evaluating multimodal, human-centered systems that augment people's performance on everyday tasks.</p>
         <p>Currently, I am working on human-computer interaction + computer vision research at <a href="https://makeabilitylab.cs.washington.edu/">Makeability Lab</a> and deep learning + robotics research at <a href="https://raivn.cs.washington.edu/people.html">RAIVN Lab</a>.</p>
-        <p>You can reach me at <a href="mailto:junw3@cs.washington.edu">junw3 [AT] cs.washington.edu</a>, <a href="https://www.linkedin.com/in/junwang0510/">LinkedIn</a>, <a href="https://github.com/junwang0510">GitHub</a>, <a href="https://www.instagram.com/junie_wangy/">Instagram</a></p>
+        <p>You can also reach me at <a href="https://www.linkedin.com/in/junwang0510/">LinkedIn</a>, <a href="https://github.com/junwang0510">GitHub</a>, <a href="https://www.instagram.com/junie_wangy/">Instagram</a></p>
         <button onclick="openResume()">Resume</button>
 
         <h2>Skills</h2>
