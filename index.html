@@ -9,6 +9,7 @@
             margin: 1em auto;
             max-width: 54em;
             font: 1em/1.5 Helvetica;
+            text-align: justify;
           }
           h1, h2, h3 {
             line-height: 1.5;
@@ -57,6 +58,13 @@
               }
               emailDiv.classList.toggle("visible");
           }
+          function openImage() {
+              var win = window.open();
+              win.document.write('<html><head><title>Research Symposium</title><style>body { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center; }</style></head><body>');
+              win.document.write('<img src="research_symposium.JPEG" alt="photo of Jae, me, Liam" width="800" height="600"/>');
+              win.document.write('<p>From left to right: Jaewook Lee, me, Liam Chu</p>');
+              win.document.write('</body></html>');
+          }
         </script>
     </head>
     <body>
@@ -76,9 +84,8 @@
                 <div id="email-display"></div>
             </div>
         </div>
-        <p>My research interests lie in human-AI interaction and human-centered AI. Specifically, I focus on designing and evaluating multimodal, human-centered systems that augment people's performance on everyday tasks.</p>
-        <p>Currently, I am working on human-computer interaction + computer vision research at <a href="https://makeabilitylab.cs.washington.edu/">Makeability Lab</a> and deep learning + robotics research at <a href="https://raivn.cs.washington.edu/people.html">RAIVN Lab</a>.</p>
-        <p>Aside from academics, I engage in various creative endeavors. I particularly enjoy refining classic card magic routines, crafting cardistry flourishes, and inventing Rubik's Cube algorithms. I also binge-watch AI podcasts (I recommend <a href="https://www.youtube.com/@lexfridman">Lex Fridman Podcast</a> and <a href="https://www.youtube.com/@TheRobotBrainsPodcast">The Robot Brains Podcast</a>).</p>
+        <p>My research interests lie in human-AI interaction and human-centered AI. Desiring to improve productivity through innovative interaction methodologies, I focus on designing and evaluating multimodal, human-centered systems that augment people's performance on everyday tasks. Presently, I research human-computer interaction + computer vision at <a href="https://makeabilitylab.cs.washington.edu/">Makeability Lab</a> and deep learning + robotics at <a href="https://raivn.cs.washington.edu/people.html">RAIVN Lab</a>.</p>
+        <p>Aside from academics, I enjoy refining card magic routines, crafting cardistry flourishes, inventing Rubik's Cube algorithms, and binge-watching AI podcasts (I recommend <a href="https://www.youtube.com/@lexfridman">Lex Fridman Podcast</a> and <a href="https://www.youtube.com/@TheRobotBrainsPodcast">The Robot Brains Podcast</a>).</p>
 
         <h2>Skills</h2>
         <ul>
@@ -106,7 +113,7 @@
 
         <h2>News</h2>
         <ul>
-            <li><strong>2023/05/20:</strong> Liam and I presented the research project titled "GazePointAR: A Context-Aware Multimodal Voice Assistant for Pronoun Disambiguation in Wearable Augmented Reality" at UW's annual Undergraduate Research Symposium! We collaborated with Jae, Elizabeth, Prof. Jon Froehlich from Makeability lab, and Sebastian from UIUC to conduct this research.</li>
+            <li><strong>2023/05/20:</strong> Liam and I presented the research project titled "GazePointAR: A Context-Aware Multimodal Voice Assistant for Pronoun Disambiguation in Wearable Augmented Reality" at UW's annual Undergraduate Research Symposium! We collaborated with Jae, Elizabeth, Prof. Jon Froehlich from Makeability lab, and Sebastian from UIUC to conduct this research.<a href="javascript:void(0)" onclick="openImage()">[image]</a></li>
         </ul>
     </body>
 </html>
