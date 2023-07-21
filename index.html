@@ -13,30 +13,43 @@
             margin: 1em auto;
             max-width: 54em;
             font: 1em/1.5 Helvetica;
+            font-family: sans-serif;
           }
+
           h1, h2, h3 {
             line-height: 1.5;
+            font-family: sans-serif;
           }
+
           div.title {
             font-weight: bold;
           }
+
           li {
             margin: 1em auto;
             line-height: 1.5;
           }
+
+          img {
+            border-radius: 10px;
+          }
+
           .image-container {
             display: flex;
             align-items: flex-start;
             gap: 20px;
             margin-left: 50px;
           }
+
           .text-container {
             flex: 1;
             text-align: center;
           }
+
           .larger-icon {
             font-size: 24px;
           }
+
           #contact-icons a,
           #contact-icons a:visited,
           #contact-icons a:active,
@@ -44,34 +57,72 @@
               color: inherit;
               text-decoration: none;
           }
+
           #email-display {
               opacity: 0;
               transition: opacity 0.5s ease-in-out;
           }
+
           #email-display.visible {
               opacity: 1;
           }
+
           hr {
               border: none;
               border-top: 1px solid #ccc;
               margin: 2em 0;
+          }
+
+          .tab {
+            cursor: pointer;
+            padding: 10px;
+            display: inline-block;
+            margin: 5px;
+          }
+
+          .tab.active {
+            background-color: rgb(240, 240, 240);
+          }
+
+          .content {
+            display: none;
+          }
+
+          .content.active {
+            display: block;
+          }
+
+          footer {
+            font-size: small;
           }
         </style>
         <script>
           function showEmail() {
               var emailDiv = document.getElementById("email-display");
               if (emailDiv.childNodes.length === 0) {
-                  var emailText = document.createTextNode("Email: junw3 [AT] cs.washington.edu");
+                  var emailText = document.createTextNode("Email: junw3@cs.washington.edu");
                   emailDiv.appendChild(emailText);
               }
               emailDiv.classList.toggle("visible");
           }
-          function openImage() {
-              var win = window.open('https://junwang0510.github.io/uw_symposium', '_blank');
-              win.document.write('<html><head><title>Research Symposium</title><style>body { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center; }</style></head><body>');
-                win.document.write('<a href="link_to_research_symposium_image.jpg"><img src="research_symposium.JPEG" alt="photo of Jae, me, Liam" width="800" height="600"/></a>');
-              win.document.write('<p>From left to right: Jaewook Lee, me, Liam Chu</p>');
-              win.document.write('</body></html>');
+
+          function showContent(id) {
+              var contents = document.getElementsByClassName('content');
+              for(var i = 0; i < contents.length; i++) {
+                  contents[i].classList.remove('active');
+              }
+
+              var tabs = document.getElementsByClassName('tab');
+              for(var i = 0; i < tabs.length; i++) {
+                  tabs[i].classList.remove('active');
+              }
+
+              document.getElementById(id).classList.add('active');
+              document.getElementById(id + '-tab').classList.add('active');
+          }
+
+          window.onload = function() {
+            showContent('news');
           }
         </script>
     </head>
@@ -93,39 +144,46 @@
                 <div id="email-display"></div>
             </div>
         </div>
-        <p>My research interests lie in Human-Computer Interaction (HCI) and Artificial Intelligence (AI). Desiring to improve productivity through innovative interaction methodologies, I focus on designing and evaluating multimodal, human-centered systems that augment people's performance on everyday tasks. I am researching human-centered AI at <a href="https://makeabilitylab.cs.washington.edu/">Makeability Lab</a> and robot learning with <a href="https://duanjiafei.com/">Jiafei Duan</a>.</p>
-        <p>Aside from academics, I enjoy refining card magic routines, crafting <a href="https://www.youtube.com/watch?v=N2aRACTmDS8">cardistry</a> flourishes, inventing Rubik's Cube algorithms, training calisthenics skills, and binge-watching AI podcasts (I recommend <a href="https://www.youtube.com/@lexfridman">Lex Fridman Podcast</a> and <a href="https://www.youtube.com/@TheRobotBrainsPodcast">The Robot Brains Podcast</a>).</p>
-        <hr>
-        <!-- <h2>Skills</h2>
-        <ul>
-            <li>💻 <strong>Programming Languages:</strong> Java, Python, C/C++, MySQL, JavaScript/TypeScript, HTML, CSS</li>
-            <li>🧑‍💻 <strong>Softwares:</strong> PyTorch, OpenCV, Git</li>
-            <li>💬 <strong>Human Languages:</strong> Mandarin (Native), English (Native), Japanese (Professional)</li>
-            <li>✨ <strong>Hobbies:</strong> Card magic, Cardistry, Calisthenics, Chess, Cubing</li>
-        </ul> -->
+        <p>👋 I'm interested in Human-Computer Interaction (HCI) and Artificial Intelligence (AI). Desiring to improve productivity through innovative interaction methodologies, I focus on designing and evaluating multimodal, human-centered systems that augment people's performance on everyday tasks. I am researching human-centered AI at <a href="https://makeabilitylab.cs.washington.edu/">Makeability Lab</a> and robot learning with <a href="https://duanjiafei.com/">Jiafei Duan</a>.</p>
+        <p>🧠 Aside from academics, I enjoy refining card magic routines, crafting <a href="https://www.youtube.com/watch?v=N2aRACTmDS8">cardistry</a> flourishes, inventing Rubik's Cube algorithms, training calisthenics skills, and binge-watching AI podcasts (I recommend <a href="https://www.youtube.com/@lexfridman">Lex Fridman Podcast</a> and <a href="https://www.youtube.com/@TheRobotBrainsPodcast">The Robot Brains Podcast</a>).</p>
 
-        <h2>Recommendations</h2>
-        <ul>
-            <li>📚 <strong>Self-Improvement:</strong> <a href="https://www.coursera.org/learn/learning-how-to-learn?utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER__coursera_FTCOF__branded-search-country-US-country-CA&campaignid=380484307&adgroupid=67687134864&device=c&keyword=coursera%20learning%20how%20to%20learn&matchtype=b&network=g&devicemodel=&adposition=&creativeid=343697761842&hide_mobile_promo&gclid=CjwKCAjwpayjBhAnEiwA-7ena9lpWYEEDYU9YV1IEItBFMkw-XZGyAIvJjNMwTOLLoMKG103kS7rtxoCAGUQAvD_BwE">Learning How to Learn</a>, <a href="https://hearthisidea.com/episodes/neel">Effective Planning and Building Habits</a>, <a href="https://www.neelnanda.io/">Neel Nanda's Blogs</a></li>
-            <li>✍ <strong>Tech Blogs:</strong> <a href="https://lilianweng.github.io/">Lil'Log</a>, <a href="https://colah.github.io/">colah's blog</a>, <a href="https://distill.pub/">Distill</a>, <a href="http://karpathy.github.io/">Andrej Karpathy blog</a>, <a href="https://karpathy.medium.com/">Andrej Karpathy@Medium</a>, <a href="https://dennybritz.com/">Denny's Blog</a>, <a href="https://hai.stanford.edu/news/blog">Stanford HAI</a>, <a href="https://www.ruder.io/">ruder.io</a></li>
-            <li>🔩 <strong>Tools:</strong> <a href="https://www.emojisearch.app/">Emoji Search</a>, <a href="https://elicit.org/">Elicit</a></li>
-        </ul>
+        <div class="tab" id="news-tab" onclick="showContent('news')">🌍 <strong>News</strong></div>
+        <div class="tab" id="misc-tab" onclick="showContent('misc')">💬 <strong>Misc</strong></div>
 
-        <h2>Quotes</h2>
-        <ul>
-            <li><strong>Marcus Tullius Cicero</strong> I criticize by creation, not by finding fault.</li>
-            <li><strong>Donald Knuth</strong> Beware of bugs in the above code; I have only proved it correct, not tried it.</li>
-            <li><strong>Ralph Waldo Emerson</strong> People wish to be settled; only in so far as they are unsettled is there any hope for them.</li>
-        </ul>
+        <div id="misc" class="content">
+            <h3>Recommendations</h3>
+            <ul>
+                <li>📚 <strong>Self-Improvement:</strong> <a href="https://www.coursera.org/learn/learning-how-to-learn?utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER__coursera_FTCOF__branded-search-country-US-country-CA&campaignid=380484307&adgroupid=67687134864&device=c&keyword=coursera%20learning%20how%20to%20learn&matchtype=b&network=g&devicemodel=&adposition=&creativeid=343697761842&hide_mobile_promo&gclid=CjwKCAjwpayjBhAnEiwA-7ena9lpWYEEDYU9YV1IEItBFMkw-XZGyAIvJjNMwTOLLoMKG103kS7rtxoCAGUQAvD_BwE">Learning How to Learn</a>, <a href="https://hearthisidea.com/episodes/neel">Effective Planning and Building Habits</a>, <a href="https://www.neelnanda.io/">Neel Nanda's Blogs</a></li>
+                <li>✍ <strong>Tech Blogs:</strong> <a href="https://lilianweng.github.io/">Lil'Log</a>, <a href="https://colah.github.io/">colah's blog</a>, <a href="https://distill.pub/">Distill</a>, <a href="http://karpathy.github.io/">Andrej Karpathy blog</a>, <a href="https://karpathy.medium.com/">Andrej Karpathy@Medium</a>, <a href="https://dennybritz.com/">Denny's Blog</a>, <a href="https://hai.stanford.edu/news/blog">Stanford HAI</a>, <a href="https://www.ruder.io/">ruder.io</a></li>
+                <li>🔩 <strong>Tools:</strong> <a href="https://www.emojisearch.app/">Emoji Search</a>, <a href="https://elicit.org/">Elicit</a></li>
+            </ul>
+            <h3>Quotes</h3>
+            <ul>
+                <li><strong>Marcus Tullius Cicero</strong> I criticize by creation, not by finding fault.</li>
+                <li><strong>Donald Knuth</strong> Beware of bugs in the above code; I have only proved it correct, not tried it.</li>
+                <li><strong>Ralph Waldo Emerson</strong> People wish to be settled; only in so far as they are unsettled is there any hope for them.</li>
+            </ul>
+            <!-- <h2>Skills</h2>
+            <ul>
+                <li>💻 <strong>Programming Languages:</strong> Java, Python, C/C++, MySQL, JavaScript/TypeScript, HTML, CSS</li>
+                <li>🧑‍💻 <strong>Softwares:</strong> PyTorch, OpenCV, Git</li>
+                <li>💬 <strong>Human Languages:</strong> Mandarin (Native), English (Native), Japanese (Professional)</li>
+                <li>✨ <strong>Hobbies:</strong> Card magic, Cardistry, Calisthenics, Chess, Cubing</li>
+            </ul> -->
+        </div>
 
-        <h2>News</h2>
-        <ul>
-            <li><strong>2023/05/20:</strong> Liam and I presented the research project titled "GazePointAR: A Context-Aware Multimodal Voice Assistant for Pronoun Disambiguation in Wearable Augmented Reality" at UW's annual Undergraduate Research Symposium! We collaborated with Jae, Elizabeth, Prof. Jon Froehlich from Makeability lab, and Sebastian from UIUC to conduct this research.<a href="javascript:void(0)" onclick="openImage()">[image]</a></li>
-        </ul>
+        <div id="news" class="content">
+            <ul>
+                <li><Strong>July 19, 2023</Strong> &nbsp; 🤞 Submitted two demo papers to <a href="https://uist.acm.org/2023/">UIST 2023</a>.</li>
+                <li><strong>May 31, 2023</strong> &nbsp; 💻 Presented at Allen School Masters and Undergraduate Research Showcase.</li>
+                <li><strong>May 20, 2023</strong> &nbsp; 🏫 Presented at UW's <a href="https://www.washington.edu/undergradresearch/symposium/">Undergraduate Research Symposium</a>.</li>
+                <li><strong>May 3, 2023</strong> &nbsp; &nbsp; 🎓 Professor <a href="https://jonfroehlich.github.io/">Jon Froehlich</a> agreed to be my research advisor. Feeling truly blessed!</li>
+            </ul>
+        </div>
         <hr>
         <footer>
-            Last updated: 2023/07/18<br>
-            &copy; 2023 Jun Wang
+            Last updated: 2023/07/22<br>
+            &copy; Copyright 2023 Jun Wang
         </footer>
     </body>
 </html>
