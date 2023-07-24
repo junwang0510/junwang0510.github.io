@@ -109,6 +109,18 @@
           footer {
             font-size: small;
           }
+
+          /* vertical space between the lines. */
+          #news table tr td {
+              padding-top: 10px;
+              padding-bottom: 10px;
+          }
+
+          /* space between the dates and the emoji. */
+          #news table tr td:nth-child(1) {
+              margin-right: 20px;
+              padding-right: 20px;
+          }
         </style>
         <script>
           function showEmail() {
@@ -181,12 +193,33 @@
         </div>
 
         <div id="news" class="content">
-            <ul>
-                <li><Strong>July 19, 2023</Strong> &nbsp; 🤞 Submitted two demos to <a href="https://uist.acm.org/2023/">UIST 2023</a>.</li>
-                <li><strong>May 31, 2023</strong> &nbsp; 💻 Presented at Allen School Masters and Undergraduate Research Showcase.</li>
-                <li><strong>May 20, 2023</strong> &nbsp; 🏫 Presented at UW's <a href="https://www.washington.edu/undergradresearch/symposium/">Undergraduate Research Symposium</a>.</li>
-                <li><strong>May 3, 2023</strong> &nbsp; &nbsp; 🎓 Professor <a href="https://jonfroehlich.github.io/">Jon Froehlich</a> agreed to be my research advisor. Feeling truly blessed!</li>
-            </ul>
+            <table>
+                <tr>
+                    <td><strong>July 19, 2023</strong></td>
+                    <td>🤞</td>
+                    <td>Submitted two demos to <a href="https://uist.acm.org/2023/">UIST 2023</a>.</td>
+                </tr>
+                <tr>
+                    <td><strong>May 31, 2023</strong></td>
+                    <td>💻</td>
+                    <td>Presented at Allen School Masters and Undergraduate Research Showcase.</td>
+                </tr>
+                <tr>
+                    <td><strong>May 20, 2023</strong></td>
+                    <td>🏫</td>
+                    <td>Presented at UW's <a href="https://www.washington.edu/undergradresearch/symposium/">Undergraduate Research Symposium</a>.</td>
+                </tr>
+                <tr>
+                    <td><strong>May 3, 2023</strong></td>
+                    <td>🎓</td>
+                    <td>Professor <a href="https://jonfroehlich.github.io/">Jon Froehlich</a> agreed to be my research advisor. Feeling truly blessed!</td>
+                </tr>
+                <tr>
+                    <td><strong>April 5, 2023</strong></td>
+                    <td>🤞</td>
+                    <td>Submitted a paper to <a href="https://uist.acm.org/2023/">UIST 2023</a>.</td>
+                </tr>
+            </table>
         </div>
         <hr>
         <footer>
