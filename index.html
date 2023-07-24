@@ -8,12 +8,14 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Open+Sans:ital,wght@1,300&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300&family=Share+Tech+Mono&family=Sigmar&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Open+Sans:ital,wght@1,300&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300&family=Share+Tech+Mono&family=Sigmar&display=swap" rel="stylesheet">
         <style>
           body {
             margin: 1em auto;
             max-width: 54em;
             font: 1em/1.5 Helvetica;
-            font-family: sans-serif;
+            font-family: assistant, sans-serif;
           }
 
           h1, h2, h3 {
@@ -74,14 +76,26 @@
           }
 
           .tab {
-            cursor: pointer;
-            padding: 10px;
-            display: inline-block;
-            margin: 5px;
+              cursor: pointer;
+              padding: 5px;
+              display: inline-block;
+              margin: 5px;
+              color: white;
+              background-color: gray;
+              border-radius: 10px;
+              text-align: center;
+          }
+
+          .tab:hover {
+              background-color: #444444;
           }
 
           .tab.active {
-            background-color: rgb(240, 240, 240);
+              background-color: rgba(20, 20, 20, 1);
+          }
+
+          .tab.active:hover {
+              background-color: black;
           }
 
           .content {
@@ -153,8 +167,8 @@
         <div id="misc" class="content">
             <h3>Recommendations</h3>
             <ul>
-                <li>📚 <strong>Self-Improvement:</strong> <a href="https://www.coursera.org/learn/learning-how-to-learn?utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER__coursera_FTCOF__branded-search-country-US-country-CA&campaignid=380484307&adgroupid=67687134864&device=c&keyword=coursera%20learning%20how%20to%20learn&matchtype=b&network=g&devicemodel=&adposition=&creativeid=343697761842&hide_mobile_promo&gclid=CjwKCAjwpayjBhAnEiwA-7ena9lpWYEEDYU9YV1IEItBFMkw-XZGyAIvJjNMwTOLLoMKG103kS7rtxoCAGUQAvD_BwE">Learning How to Learn</a>, <a href="https://hearthisidea.com/episodes/neel">Effective Planning and Building Habits</a>, <a href="https://www.neelnanda.io/">Neel Nanda's Blogs</a></li>
-                <li>✍ <strong>Tech Blogs:</strong> <a href="https://lilianweng.github.io/">Lil'Log</a>, <a href="https://colah.github.io/">colah's blog</a>, <a href="https://distill.pub/">Distill</a>, <a href="http://karpathy.github.io/">Andrej Karpathy blog</a>, <a href="https://karpathy.medium.com/">Andrej Karpathy@Medium</a>, <a href="https://dennybritz.com/">Denny's Blog</a>, <a href="https://hai.stanford.edu/news/blog">Stanford HAI</a>, <a href="https://www.ruder.io/">ruder.io</a></li>
+                <li>📚 <strong>Self-Improvement:</strong> <a href="https://www.youtube.com/watch?v=-5RCmu-HuTg">12 Rules for Life</a>, <a href="https://www.coursera.org/learn/learning-how-to-learn?utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER__coursera_FTCOF__branded-search-country-US-country-CA&campaignid=380484307&adgroupid=67687134864&device=c&keyword=coursera%20learning%20how%20to%20learn&matchtype=b&network=g&devicemodel=&adposition=&creativeid=343697761842&hide_mobile_promo&gclid=CjwKCAjwpayjBhAnEiwA-7ena9lpWYEEDYU9YV1IEItBFMkw-XZGyAIvJjNMwTOLLoMKG103kS7rtxoCAGUQAvD_BwE">Learning How to Learn</a>, <a href="https://www.neelnanda.io/">Neel Nanda's Blogs</a></li>
+                <li>✍ <strong>Tech Blogs:</strong> <a href="https://lilianweng.github.io/">Lil'Log</a>, <a href="https://colah.github.io/">colah's blog</a>, <a href="https://distill.pub/">Distill</a>, <a href="http://karpathy.github.io/">Andrej Karpathy blog</a>, <a href="https://dennybritz.com/">Denny's Blog</a>, <a href="https://hai.stanford.edu/news/blog">Stanford HAI</a>, <a href="https://www.ruder.io/">ruder.io</a></li>
                 <li>🔩 <strong>Tools:</strong> <a href="https://www.emojisearch.app/">Emoji Search</a>, <a href="https://elicit.org/">Elicit</a></li>
             </ul>
             <h3>Quotes</h3>
@@ -164,13 +178,6 @@
                 <li><strong>Ralph Waldo Emerson</strong> People wish to be settled; only in so far as they are unsettled is there any hope for them.</li>
                 <li><strong>C.S. Lewis</strong> Humility is not thinking less of yourself, it's thinking of yourself less.</li>
             </ul>
-            <!-- <h2>Skills</h2>
-            <ul>
-                <li>💻 <strong>Programming Languages:</strong> Java, Python, C/C++, MySQL, JavaScript/TypeScript, HTML, CSS</li>
-                <li>🧑‍💻 <strong>Softwares:</strong> PyTorch, OpenCV, Git</li>
-                <li>💬 <strong>Human Languages:</strong> Mandarin (Native), English (Native), Japanese (Professional)</li>
-                <li>✨ <strong>Hobbies:</strong> Card magic, Cardistry, Calisthenics, Chess, Cubing</li>
-            </ul> -->
         </div>
 
         <div id="news" class="content">
@@ -183,7 +190,7 @@
         </div>
         <hr>
         <footer>
-            Last updated: 2023/07/22<br>
+            Last updated: 2023/07/25<br>
             &copy; Copyright 2023 Jun Wang
         </footer>
     </body>
