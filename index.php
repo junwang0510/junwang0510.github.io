@@ -1,5 +1,9 @@
 <?php
-    $visits = include('counter.php');
+    // Include the count.php file
+    include 'count.php';
+
+    // Call the function to get the visit count
+    $visitCount = getCount();
 ?>
 
 <!DOCTYPE html>
@@ -238,7 +242,7 @@
         <hr>
         <footer>
             Last updated: 2023/07/31<br>
-            Unique visitors since August 2023: <?php print htmlspecialchars($visits, ENT_QUOTES, 'UTF-8'); ?> <br>
+            Visitors since August 2023: <?php echo $visitCount; ?><br>
             &copy; Copyright 2023 Jun Wang
         </footer>
     </body>
