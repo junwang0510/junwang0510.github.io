@@ -1,3 +1,31 @@
+<?php
+    $servername = "localhost";
+    $username = "dtbsuser";
+    $password = "dtbs#passw01";
+    $dbname = "dtbsname";
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "UPDATE Counter SET visits = visits+1 WHERE id = 1";
+    $conn->query($sql);
+
+    $sql = "SELECT visits FROM Counter WHERE id = 1";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            $visits = $row["visits"];
+        }
+    } else {
+        echo "no results";
+    }
+
+    $conn->close();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -179,7 +207,7 @@
         <div id="misc" class="content">
             <h3>Recommendations</h3>
             <ul>
-                <li>📚 <strong>Self-Improvement:</strong> <a href="https://www.youtube.com/watch?v=-5RCmu-HuTg">12 Rules for Life</a>, <a href="https://www.coursera.org/learn/learning-how-to-learn?utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER__coursera_FTCOF__branded-search-country-US-country-CA&campaignid=380484307&adgroupid=67687134864&device=c&keyword=coursera%20learning%20how%20to%20learn&matchtype=b&network=g&devicemodel=&adposition=&creativeid=343697761842&hide_mobile_promo&gclid=CjwKCAjwpayjBhAnEiwA-7ena9lpWYEEDYU9YV1IEItBFMkw-XZGyAIvJjNMwTOLLoMKG103kS7rtxoCAGUQAvD_BwE">Learning How to Learn</a>, <a href="https://www.neelnanda.io/">Neel Nanda's Blogs</a></li>
+                <li>📚 <strong>Self-Improvement:</strong> <a href="https://www.youtube.com/watch?v=QmOF0crdyRU&list=WL&index=1">Dopamine Control</a>, <a href="https://www.youtube.com/watch?v=-5RCmu-HuTg">12 Rules for Life</a>, <a href="https://www.coursera.org/learn/learning-how-to-learn?utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER__coursera_FTCOF__branded-search-country-US-country-CA&campaignid=380484307&adgroupid=67687134864&device=c&keyword=coursera%20learning%20how%20to%20learn&matchtype=b&network=g&devicemodel=&adposition=&creativeid=343697761842&hide_mobile_promo&gclid=CjwKCAjwpayjBhAnEiwA-7ena9lpWYEEDYU9YV1IEItBFMkw-XZGyAIvJjNMwTOLLoMKG103kS7rtxoCAGUQAvD_BwE">Learning How to Learn</a>, <a href="https://www.neelnanda.io/">Neel Nanda's Blogs</a></li>
                 <li>✍ <strong>Tech Blogs:</strong> <a href="https://lilianweng.github.io/">Lil'Log</a>, <a href="https://colah.github.io/">colah's blog</a>, <a href="https://distill.pub/">Distill</a>, <a href="http://karpathy.github.io/">Andrej Karpathy blog</a>, <a href="https://dennybritz.com/">Denny's Blog</a>, <a href="https://hai.stanford.edu/news/blog">Stanford HAI</a>, <a href="https://www.ruder.io/">ruder.io</a></li>
                 <li>🔩 <strong>Tools:</strong> <a href="https://www.emojisearch.app/">Emoji Search</a>, <a href="https://elicit.org/">Elicit</a></li>
             </ul>
@@ -233,7 +261,8 @@
         </div>
         <hr>
         <footer>
-            Last updated: 2023/07/25<br>
+            Last updated: 2023/07/31<br>
+            Unique visitors since August 2023: <?php print $visits; ?> <br>
             &copy; Copyright 2023 Jun Wang
         </footer>
     </body>
