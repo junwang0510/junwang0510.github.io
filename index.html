@@ -25,7 +25,7 @@
           }
 
           h2 {
-            margin-bottom: 5px; /* Adjust this value as needed */
+            margin-bottom: 5px;
           }
 
           div.title {
@@ -80,29 +80,6 @@
               margin: 2em 0;
           }
 
-          .tab {
-              cursor: pointer;
-              padding: 5px;
-              display: inline-block;
-              margin: 5px;
-              color: white;
-              background-color: gray;
-              border-radius: 10px;
-              text-align: center;
-          }
-
-          .tab:hover {
-              background-color: #444444;
-          }
-
-          .tab.active {
-              background-color: rgba(25, 25, 25, 1);
-          }
-
-          .tab.active:hover {
-              background-color: #2c2c34;
-          }
-
           .content {
             display: none;
           }
@@ -137,19 +114,16 @@
           }
 
           .tab {
-              cursor: pointer;
-              padding-left: 10px;
-              padding-right: 10px;
-              padding-top: 2px;
-              padding-bottom: 2px;
-              margin-left: 5px;
-              margin-right: 5px;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              color: white;
-              background-color: gray;
-              border-radius: 10px;
-              text-align: center;
+            padding-left: 25px;
+            color: gray;
+          }
+
+          .tab:hover {
+              color: #2c2c34;
+          }
+
+          .tab.active {
+              color: black;
           }
         </style>
 
@@ -182,8 +156,8 @@
 
     <body>
         <div class="banner">
-            <div class="tab" id="home-tab" onclick="showContent('home')">🏠 <strong>Home</strong></div>
-            <div class="tab" id="misc-tab" onclick="showContent('misc')">💬 <strong>Misc</strong></div>
+            <div class="tab" id="home-tab" onclick="showContent('home')"><strong>Home</strong></div>
+            <div class="tab" id="misc-tab" onclick="showContent('misc')"><strong>Misc</strong></div>
         </div>
 
         <div id="home" class="content">
@@ -265,7 +239,7 @@
                 <li>📚 <strong>Self-Improvement:</strong> <a href="https://www.youtube.com/watch?v=QmOF0crdyRU&list=WL&index=1">Dopamine Control</a>, <a href="https://www.youtube.com/watch?v=-5RCmu-HuTg">12 Rules for Life</a>, <a href="https://www.coursera.org/learn/learning-how-to-learn?utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER__coursera_FTCOF__branded-search-country-US-country-CA&campaignid=380484307&adgroupid=67687134864&device=c&keyword=coursera%20learning%20how%20to%20learn&matchtype=b&network=g&devicemodel=&adposition=&creativeid=343697761842&hide_mobile_promo&gclid=CjwKCAjwpayjBhAnEiwA-7ena9lpWYEEDYU9YV1IEItBFMkw-XZGyAIvJjNMwTOLLoMKG103kS7rtxoCAGUQAvD_BwE">Learning How to Learn</a>, <a href="https://www.neelnanda.io/">Neel Nanda's Blogs</a></li>
                 <li>✍ <strong>Tech Blogs:</strong> <a href="https://lilianweng.github.io/">Lil'Log</a>, <a href="https://colah.github.io/">colah's blog</a>, <a href="https://distill.pub/">Distill</a>, <a href="http://karpathy.github.io/">Andrej Karpathy blog</a>, <a href="https://dennybritz.com/">Denny's Blog</a>, <a href="https://hai.stanford.edu/news/blog">Stanford HAI</a>, <a href="https://www.ruder.io/">ruder.io</a></li>
                 <li>🔩 <strong>Tools:</strong> <a href="https://www.emojisearch.app/">Emoji Search</a>, <a href="https://elicit.org/">Elicit</a>, <a href="https://paperswithcode.com/">Papers with Code</a></li>
-                <li>🎬 <strong>Movies:</strong> <a href="https://www.imdb.com/title/tt0482571/">The Prestige</a>, <a href="https://www.imdb.com/title/tt1375666/">Inception</a>, <a href="https://www.imdb.com/title/tt2582802/">Whiplash</a>, <a href="https://www.imdb.com/title/tt0816692/">Interstellar</a>, <a href="https://www.imdb.com/title/tt0825232/">The Bucket List</a></li>
+                <li>🎬 <strong>Movies:</strong> <a href="https://www.imdb.com/title/tt0482571/">The Prestige</a>, <a href="https://www.imdb.com/title/tt1375666/">Inception</a>, <a href="https://www.imdb.com/title/tt2582802/">Whiplash</a>, <a href="https://www.imdb.com/title/tt0816692/">Interstellar</a>, <a href="https://www.imdb.com/title/tt0133093/">The Matrix</a></li>
             </ul>
 
             <hr>
