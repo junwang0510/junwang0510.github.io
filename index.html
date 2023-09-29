@@ -143,6 +143,37 @@
             max-height: 218px;
             overflow-y: auto;
           }
+
+        /* Remove bullet points from the navigation list */
+        .nav {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Style the list items */
+        .nav li {
+            display: inline; /* Display the list items in a horizontal line */
+            margin: 0 20px; /* Add some spacing between the list items */
+            font-size: 18px;
+        }
+
+        /* Style the links */
+        .nav a {
+            text-decoration: none; /* Remove underline */
+            color: #000; /* Set the color for links */
+        }
+
+        /* Center the navigation bar on the webpage */
+        .navbar {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .navbar hr {
+        margin: 0 10px; /* Add spacing around hr element */
+        border: none; /* Remove the default border */
+        border-top: 2px solid gray; /* Set the desired border thickness and color */
+        }
         </style>
 
         <script>
@@ -217,10 +248,19 @@
             </a>
         </div>
 
-        <hr>
+        <div class="navbar">
+            <hr>
+            <ul class="nav">
+                <li><a href="#news"><strong>News</strong></a></li>
+                <li><a href="#recommendations"><strong>Recommendations</strong></a></li>
+                <li><a href="#quotes"><strong>Quotes</strong></a></li>
+                <li><a href="#writings"><strong>Writings</strong></a></li>
+            </ul>
+            <hr>
+        </div>
 
         <!-- News -->
-        <h2>News</h2>
+        <h2 id="news">News</h2>
         <div class="news-container">
             <table>
                 <tr>
@@ -281,7 +321,7 @@
 
         <!-- <div id="misc" class="content"> -->
         <!-- Recommendations -->
-        <h2>Recommendations</h2>
+        <h2 id="recommendations">Recommendations</h2>
         <ul>
             <li>🔝 <strong>Self-Improvement:</strong> <a href="https://www.youtube.com/watch?v=QmOF0crdyRU&list=WL&index=1">Dopamine Control</a>, <a href="https://www.youtube.com/watch?v=-5RCmu-HuTg">12 Rules for Life</a>, <a href="https://www.coursera.org/learn/learning-how-to-learn?utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER__coursera_FTCOF__branded-search-country-US-country-CA&campaignid=380484307&adgroupid=67687134864&device=c&keyword=coursera%20learning%20how%20to%20learn&matchtype=b&network=g&devicemodel=&adposition=&creativeid=343697761842&hide_mobile_promo&gclid=CjwKCAjwpayjBhAnEiwA-7ena9lpWYEEDYU9YV1IEItBFMkw-XZGyAIvJjNMwTOLLoMKG103kS7rtxoCAGUQAvD_BwE">Learning How to Learn</a>, <a href="https://www.neelnanda.io/">Neel Nanda's Blogs</a></li>
             <li>✍ <strong>Tech Blogs:</strong> <a href="https://lilianweng.github.io/">Lil'Log</a>, <a href="https://colah.github.io/">colah's blog</a>, <a href="https://distill.pub/">Distill</a>, <a href="http://karpathy.github.io/">Andrej Karpathy blog</a>, <a href="https://dennybritz.com/">Denny's Blog</a>, <a href="https://hai.stanford.edu/news/blog">Stanford HAI</a>, <a href="https://www.ruder.io/">ruder.io</a></li>
@@ -292,7 +332,7 @@
         <hr>
 
         <!-- Quotes -->
-        <h2>Quotes</h2>
+        <h2 id="quotes">Quotes</h2>
         <ul>
             <li><strong>Marcus Tullius Cicero</strong> I criticize by creation, not by finding fault.</li>
             <li><strong>Donald Knuth</strong> Beware of bugs in the above code; I have only proved it correct, not tried it.</li>
@@ -302,13 +342,19 @@
 
         <hr>
 
+        <h2 id="writings">Writings</h2>
+        <ul>
+            <li><a href="Doc/Good_Website.pdf" target="_blank">Components of a Good Personal Website</a> (Updating)</li>
+        </ul>
+        <hr>
+
         <!-- Jun's World Map -->
         <!-- <h2>Places I've Been (Incomplete)</h2>
         <p align="center"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1m1hqXabBQVMJKnb3kFfCMipjFYSOTWc&ehbc=2E312F" width="640" height="480"></iframe></p> -->
         <!-- </div> -->
 
         <footer>
-            Last updated: 2023/09/25<br>
+            Last updated: 2023/09/29<br>
             &copy; Copyright 2023 Jun Wang
         </footer>
     </body>
