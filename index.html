@@ -174,6 +174,48 @@
         border: none; /* Remove the default border */
         border-top: 2px solid gray; /* Set the desired border thickness and color */
         }
+
+
+        /* Style for the container */
+        .image-container3 {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style for the image */
+        .image-container3 img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        /* Style for the overlay */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7); /* White with some transparency */
+            opacity: 0; /* Initially invisible */
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Style for the text description */
+        .overlay-text {
+            color: black; /* Text color */
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Hover effect */
+        .image-container3:hover .overlay {
+            opacity: 1; /* Make the overlay visible on hover */
+        }
         </style>
 
         <script>
@@ -355,6 +397,74 @@
         <p align="center"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1m1hqXabBQVMJKnb3kFfCMipjFYSOTWc&ehbc=2E312F" width="640" height="480"></iframe></p> -->
         <!-- </div> -->
 
+        <h2>Gallery</h2>
+        <div class="image-container3">
+            <img src="img/Seattle_Cardistry.jpg" alt="Seattle Cardistry" width="335">
+            <div class="overlay">
+                <div class="overlay-text">
+                    Seattle Cardistry Jam<br>
+                    Humble Pie<br>
+                    November 2021
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container3">
+            <img src="img/Quad_Portrait.jpg" alt="Quad Portrait" width="250">
+            <div class="overlay">
+                <div class="overlay-text">
+                    Self Portrait<br>
+                    The Quad<br>
+                    April 2023
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container3">
+            <img src="img/ARUW_Kayaking.jpg" alt="ARUW Kayaking" width="247">
+            <div class="overlay">
+                <div class="overlay-text">
+                    ARUW Software Team Kayaking<br>
+                    Union Bay<br>
+                    September 2023
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container3">
+            <img src="img/Quad_GazePointAR.jpg" alt="GazePointAR Quad" width="205">
+            <div class="overlay">
+                <div class="overlay-text">
+                    GazePointAR In The Wild<br>
+                    The Quad<br>
+                    April 2023
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container3">
+            <img src="img/TMobile_Visit.JPG" alt="GazePointAR Quad" width="450">
+            <div class="overlay">
+                <div class="overlay-text">
+                    Makeability Lab Visits T-Mobile Tech Center<br>
+                    T-Mobile Tech Experience Center<br>
+                    February 2023
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container3">
+            <img src="img/Fire.jpg" alt="Fireside Reflection" width="175">
+            <div class="overlay">
+                <div class="overlay-text">
+                    Fireside Reflection<br>
+                    Salish Sea<br>
+                    September 2022
+                </div>
+            </div>
+        </div>
+
+        <hr>
         <footer>
             Last updated: 2023/10/01<br>
             &copy; Copyright 2023 Jun Wang
