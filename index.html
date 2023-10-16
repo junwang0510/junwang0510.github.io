@@ -216,6 +216,34 @@
         .image-container3:hover .overlay {
             opacity: 1; /* Make the overlay visible on hover */
         }
+
+        /* Remove underline for hyperlinks */
+        a {
+        text-decoration: none;
+        }
+
+        /* Remove the change in color and make all hyperlink text blue */
+        a, a:visited, a:active, a:focus {
+        color: #265ed4;
+        }
+
+        body.light-theme {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        body.dark-theme {
+            background-color: #212121;
+            color: #ffffff;
+        }
+
+        .dark-theme .fa-sun {
+            display: none;
+        }
+
+        .light-theme .fa-moon {
+            display: none;
+        }
         </style>
 
         <script>
@@ -226,6 +254,17 @@
                   emailDiv.appendChild(emailText);
               }
               emailDiv.classList.toggle("visible");
+          }
+
+          function toggleTheme() {
+            const body = document.body;
+            if (body.classList.contains('dark-theme')) {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+            } else {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+            }
           }
 
           function showContent(id) {
@@ -245,7 +284,7 @@
         </script>
     </head>
 
-    <body>
+    <body class="light-theme">
         <!-- <div class="banner">
             <div class="tab" id="home-tab" onclick="showContent('home')"><strong>Home</strong></div>
             <div class="tab" id="misc-tab" onclick="showContent('misc')"><strong>Misc</strong></div>
@@ -263,7 +302,8 @@
                     <a href="https://github.com/junwang0510"><i class="fab fa-github larger-icon"></i></a>&nbsp;&nbsp;&nbsp;
                     <a href="https://www.linkedin.com/in/junwang0510/"><i class="fab fa-linkedin larger-icon"></i></a>&nbsp;&nbsp;&nbsp;
                     <a href="https://twitter.com/JunWang75215513"><i class="fab fa-x-twitter larger-icon"></i></a>&nbsp;&nbsp;&nbsp;
-                    <a href="https://www.instagram.com/junie_wangy/"><i class="fab fa-instagram larger-icon"></i></a>
+                    <a href="https://www.instagram.com/junie_wangy/"><i class="fab fa-instagram larger-icon"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="javascript:toggleTheme()"><i class="fas fa-sun larger-icon"></i><i class="fas fa-moon larger-icon"></i></a>
                 </p>
                 <div id="email-display"></div>
             </div>
@@ -271,7 +311,7 @@
 
         <!-- Bio -->
         <p>👋 I am researching <strong>Human-Centered AI</strong> at <a href="https://makeabilitylab.cs.washington.edu/">Makeability Lab</a> and <strong>Embodied AI</strong> at <a href="https://raivn.cs.washington.edu/">RAIVN Lab</a>. I am fortunate to be advised by Prof. <a href="https://jonfroehlich.github.io/">Jon Froehlich</a> and mentored by <a href="https://jaewook-lee.com/">Jae Lee</a> and <a href="https://duanjiafei.com/">Jiafei Duan</a>. I design and evaluate context-aware, human-centered systems that provide personalized assistance for everyday tasks and assist various accessibility communities. I am also a software team member of <a href="https://aruw.org/">ARUW</a>, a three-time RoboMaster North America Champion.</p>
-        <p>🧠 Aside from academics, I enjoy refining card magic routines, crafting <a href="https://www.youtube.com/watch?v=N2aRACTmDS8">cardistry</a> flourishes, inventing Rubik's Cube algorithms, training calisthenics skills, and binge-watching podcasts (I recommend <a href="https://www.youtube.com/@lexfridman">Lex Fridman Podcast</a> and <a href="https://www.youtube.com/@hubermanlab">Huberman Lab</a>).</p>
+        <p>🧠 Aside from academics, I enjoy refining card magic routines, crafting <a href="https://www.youtube.com/watch?v=N2aRACTmDS8">cardistry</a> flourishes, inventing Rubik's Cube algorithms, training calisthenics skills, and binge-watching podcasts.</p>
 
         <!-- <p>Current affiliations:</p>
         <div class="image-container2">
@@ -309,7 +349,7 @@
                 <tr>
                     <td><strong>Sep. 14, 2023</strong></td>
                     <td>🤞</td>
-                    <td>Submitted a paper to <a href="https://chi2024.acm.org/">CHI 2024</a>.</td>
+                    <td>One paper submitted to <a href="https://chi2024.acm.org/">CHI 2024</a>.</td>
                 </tr>
                 <tr>
                     <td><strong>Aug. 9, 2023</strong></td>
@@ -319,7 +359,7 @@
                 <tr>
                     <td><strong>July 19, 2023</strong></td>
                     <td>🤞</td>
-                    <td>Submitted two demos to <a href="https://uist.acm.org/2023/">UIST 2023</a>.</td>
+                    <td>Two demos submitted to <a href="https://uist.acm.org/2023/">UIST 2023</a>.</td>
                 </tr>
                 <tr>
                     <td><strong>June 20, 2023</strong></td>
@@ -334,7 +374,7 @@
                 <tr>
                     <td><strong>May 20, 2023</strong></td>
                     <td>🏫</td>
-                    <td>Presented at UW's <a href="https://www.washington.edu/undergradresearch/symposium/">Undergraduate Research Symposium</a>.</td>
+                    <td>Presented at UW <a href="https://www.washington.edu/undergradresearch/symposium/">Undergraduate Research Symposium</a>.</td>
                 </tr>
                 <tr>
                     <td><strong>May 3, 2023</strong></td>
@@ -344,7 +384,7 @@
                 <tr>
                     <td><strong>April 5, 2023</strong></td>
                     <td>🤞</td>
-                    <td>Submitted a paper to <a href="https://uist.acm.org/2023/">UIST 2023</a>.</td>
+                    <td>One paper submitted to <a href="https://uist.acm.org/2023/">UIST 2023</a>.</td>
                 </tr>
                 <tr>
                     <td><strong>Nov. 13, 2022</strong></td>
@@ -361,9 +401,12 @@
         <!-- Recommendations -->
         <h2 id="recommendations">Recommendations</h2>
         <ul>
-            <li><strong>Self-Improvement:</strong> <a href="https://www.youtube.com/watch?v=QmOF0crdyRU&list=WL&index=1">Dopamine Control</a>, <a href="https://www.youtube.com/watch?v=-5RCmu-HuTg">12 Rules for Life</a>, <a href="https://www.neelnanda.io/">Neel Nanda's Blogs</a></li>
             <li><strong>ML Blogs:</strong> <a href="https://lilianweng.github.io/">Lil'Log</a>, <a href="https://colah.github.io/">colah's blog</a>, <a href="https://distill.pub/">Distill</a>, <a href="http://karpathy.github.io/">Andrej Karpathy blog</a>, <a href="https://dennybritz.com/">Denny's Blog</a>, <a href="https://hai.stanford.edu/news/blog">Stanford HAI</a>, <a href="https://www.ruder.io/">ruder.io</a></li>
+
+            <li><strong>Podcasts:</strong> <a href="https://www.youtube.com/@lexfridman">Lex Fridman Podcast</a>, <a href="https://www.youtube.com/@hubermanlab">Huberman Lab</a>, <a href="https://www.youtube.com/@TheRobotBrainsPodcast">The Robot Brains Podcast</a></li>
+
             <li><strong>Tools:</strong> <a href="https://www.emojisearch.app/">Emoji Search</a>, <a href="https://elicit.org/">Elicit</a>, <a href="https://paperswithcode.com/">Papers with Code</a></li>
+
             <li><strong>Movies:</strong> <a href="https://www.imdb.com/title/tt0482571/">The Prestige</a>, <a href="https://www.imdb.com/title/tt0119217/">Good Will Hunting</a>, <a href="https://www.imdb.com/title/tt1375666/">Inception</a>, <a href="https://www.imdb.com/title/tt2582802/">Whiplash</a>, <a href="https://www.imdb.com/title/tt0133093/">The Matrix</a></li>
         </ul>
 
@@ -376,7 +419,6 @@
             <li><strong>Donald Knuth</strong> Beware of bugs in the above code; I have only proved it correct, not tried it.</li>
             <li><strong>Ralph Waldo Emerson</strong> People wish to be settled; only in so far as they are unsettled is there any hope for them.</li>
             <li><strong>C.S. Lewis</strong> Humility is not thinking less of yourself, it's thinking of yourself less.</li>
-            <li><strong>Ulrich von Hutten</strong> Die Luft der Freiheit weht.</li>
         </ul>
 
         <hr>
@@ -392,7 +434,7 @@
         <p align="center"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1m1hqXabBQVMJKnb3kFfCMipjFYSOTWc&ehbc=2E312F" width="640" height="480"></iframe></p> -->
         <!-- </div> -->
 
-        <h2>Gallery</h2>
+        <!-- <h2>Gallery</h2>
         <div class="image-container3">
             <img src="img/Seattle_Cardistry.jpg" alt="Seattle Cardistry" width="320">
             <div class="overlay">
@@ -459,9 +501,9 @@
             </div>
         </div>
 
-        <hr>
+        <hr> -->
         <footer>
-            Last updated: 2023/10/06<br>
+            Last updated: 2023/10/15<br>
             &copy; Copyright 2023 Jun Wang
         </footer>
     </body>
