@@ -48,18 +48,6 @@
             margin-left: 50px;
           }
 
-          .image-container2 {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-          }
-
-          .image-container2 img {
-            height: 45px;
-            width: auto;
-            margin: 0 15px;
-          }
-
           .text-container {
             flex: 1;
             text-align: center;
@@ -104,7 +92,6 @@
             font-size: small;
           }
 
-          /* vertical space between the lines. */
           table tr td {
               padding-top: 10px;
               padding-bottom: 10px;
@@ -151,53 +138,47 @@
             text-align: center;
         }
 
-        /* Style the list items */
         .nav li {
-            display: inline; /* Display the list items in a horizontal line */
-            margin: 0 20px; /* Add some spacing between the list items */
+            display: inline;
+            margin: 0 20px;
             font-size: 18px;
         }
 
-        /* Style the links */
         .nav a {
-            text-decoration: none; /* Remove underline */
-            color: #000; /* Set the color for links */
+            text-decoration: none;
+            color: #000;
         }
 
-        /* Center the navigation bar on the webpage */
         .navbar {
             text-align: center;
             margin-top: 40px;
         }
+
         .navbar hr {
-        margin: 0 10px; /* Add spacing around hr element */
-        border: none; /* Remove the default border */
-        border-top: 2px solid gray; /* Set the desired border thickness and color */
+        margin: 0 10px;
+        border: none;
+        border-top: 2px solid gray;
         }
 
-
-        /* Style for the container */
         .image-container3 {
             position: relative;
             display: inline-block;
         }
 
-        /* Style for the image */
         .image-container3 img {
             max-width: 100%;
             height: auto;
             vertical-align: middle;
         }
 
-        /* Style for the overlay */
         .overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(255, 255, 255, 0.7); /* White with some transparency */
-            opacity: 0; /* Initially invisible */
+            background-color: rgba(255, 255, 255, 0.7);
+            opacity: 0;
             transition: opacity 0.3s ease;
             display: flex;
             align-items: center;
@@ -205,24 +186,20 @@
             text-align: center;
         }
 
-        /* Style for the text description */
         .overlay-text {
-            color: black; /* Text color */
+            color: black;
             font-size: 16px;
             font-weight: bold;
         }
 
-        /* Hover effect */
         .image-container3:hover .overlay {
-            opacity: 1; /* Make the overlay visible on hover */
+            opacity: 1;
         }
 
-        /* Remove underline for hyperlinks */
         a {
         text-decoration: none;
         }
 
-        /* Remove the change in color and make all hyperlink text blue */
         a, a:visited, a:active, a:focus {
         color: #265ed4;
         }
@@ -313,24 +290,9 @@
         <p>👋 I am researching <strong>Human-Centered AI</strong> at <a href="https://makeabilitylab.cs.washington.edu/">Makeability Lab</a> and <strong>Embodied AI</strong> at <a href="https://raivn.cs.washington.edu/">RAIVN Lab</a>. I am fortunate to be advised by Prof. <a href="https://jonfroehlich.github.io/">Jon Froehlich</a> and mentored by <a href="https://jaewook-lee.com/">Jae Lee</a> and <a href="https://duanjiafei.com/">Jiafei Duan</a>. I design and evaluate context-aware, human-centered systems that provide personalized assistance for everyday tasks and assist various accessibility communities. I am also a software team member of <a href="https://aruw.org/">ARUW</a>, a three-time RoboMaster North America Champion.</p>
         <p>🧠 Aside from academics, I enjoy refining card magic routines, crafting <a href="https://www.youtube.com/watch?v=N2aRACTmDS8">cardistry</a> flourishes, inventing Rubik's Cube algorithms, training calisthenics skills, and binge-watching podcasts.</p>
 
-        <!-- <p>Current affiliations:</p>
-        <div class="image-container2">
-            <a href="https://www.cs.washington.edu/">
-                <img src="img/Allen_School_Logo.png" alt="UW Logo">
-            </a>
-            <a href="https://makeabilitylab.cs.washington.edu/">
-                <img src="img/Makeability.jpg" alt="Makeability Lab Logo">
-            </a>
-            <a href="https://raivn.cs.washington.edu/">
-                <img src="img/RAIVN.png" alt="RAIVN Lab Logo">
-            </a>
-            <a href="https://aruw.org/">
-                <img src="img/ARUW.png" alt="ARUW Logo">
-            </a>
-        </div> -->
-
         <hr>
 
+        <!-- Navbar -->
         <!-- <div class="navbar">
             <hr>
             <ul class="nav">
@@ -346,6 +308,11 @@
         <h2 id="news">News</h2>
         <div class="news-container">
             <table>
+                <tr>
+                    <td><strong>Oct. 17, 2023</strong></td>
+                    <td>🌎</td>
+                    <td>News about our work: <a href="https://www.washington.edu/news/2023/10/17/accessibility-augmented-virtual-reality/">UW News</a>, <a href="https://www.hankyung.com/article/2023100619281">Korean News</a>.</td>
+                </tr>
                 <tr>
                     <td><strong>Sep. 14, 2023</strong></td>
                     <td>🤞</td>
@@ -393,11 +360,9 @@
                 </tr>
             </table>
         </div>
-        <!-- </div> -->
 
         <hr>
 
-        <!-- <div id="misc" class="content"> -->
         <!-- Recommendations -->
         <h2 id="recommendations">Recommendations</h2>
         <ul>
@@ -423,17 +388,12 @@
 
         <hr>
 
-        <!-- <h2 id="writings">Writings</h2>
-        <ul>
-            <li><a href="Doc/Good_Website.pdf" target="_blank">Components of a Good Personal Website</a> (Updating)</li>
-        </ul>
-        <hr> -->
-
-        <!-- Jun's World Map -->
+        <!-- World Map -->
         <!-- <h2>Places I've Been (Incomplete)</h2>
         <p align="center"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1m1hqXabBQVMJKnb3kFfCMipjFYSOTWc&ehbc=2E312F" width="640" height="480"></iframe></p> -->
         <!-- </div> -->
 
+        <!-- Gallery -->
         <!-- <h2>Gallery</h2>
         <div class="image-container3">
             <img src="img/Seattle_Cardistry.jpg" alt="Seattle Cardistry" width="320">
@@ -502,8 +462,9 @@
         </div>
 
         <hr> -->
+
         <footer>
-            Last updated: 2023/10/15<br>
+            Last updated: 2023/10/17<br>
             &copy; Copyright 2023 Jun Wang
         </footer>
     </body>
