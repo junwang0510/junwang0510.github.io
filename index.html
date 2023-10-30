@@ -3,272 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>Jun Wang</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Open+Sans:ital,wght@1,300&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300&family=Share+Tech+Mono&family=Sigmar&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Open+Sans:ital,wght@1,300&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300&family=Share+Tech+Mono&family=Sigmar&display=swap" rel="stylesheet">
-
-        <style>
-          body {
-            margin: 1em auto;
-            max-width: 54em;
-            font: 1em/1.5 Helvetica;
-            font-family: assistant, sans-serif;
-          }
-
-          h1, h2, h3 {
-            line-height: 1.5;
-            font-family: sans-serif;
-          }
-
-          h2 {
-            margin-bottom: 5px;
-          }
-
-          div.title {
-            font-weight: bold;
-          }
-
-          li {
-            margin: 1em auto;
-            line-height: 1.5;
-          }
-
-          #portrait {
-            border-radius: 10px;
-          }
-
-          .image-container {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            margin-left: 50px;
-          }
-
-          .text-container {
-            flex: 1;
-            text-align: center;
-          }
-
-          .larger-icon {
-            font-size: 24px;
-          }
-
-          #contact-icons a,
-          #contact-icons a:visited,
-          #contact-icons a:active,
-          #contact-icons a:focus {
-              color: inherit;
-              text-decoration: none;
-          }
-
-          #email-display {
-              opacity: 0;
-              transition: opacity 0.5s ease-in-out;
-          }
-
-          #email-display.visible {
-              opacity: 1;
-          }
-
-          hr {
-              border: none;
-              border-top: 1px solid #ccc;
-              margin: 2em 0;
-          }
-
-          .content {
-            display: none;
-          }
-
-          .content.active {
-            display: block;
-          }
-
-          footer {
-            font-size: small;
-          }
-
-          table tr td {
-              padding-top: 10px;
-              padding-bottom: 10px;
-          }
-
-          /* space between the dates and the emoji. */
-          table tr td:nth-child(1) {
-              margin-right: 20px;
-              padding-right: 20px;
-          }
-
-          .banner {
-              display: flex;
-              justify-content: flex-end;
-          }
-
-          .tabs {
-              display: flex;
-          }
-
-          .tab {
-            padding-left: 15px;
-            padding-right: 15px;
-            color: gray;
-          }
-
-          .tab:hover {
-              color: #2c2c34;
-          }
-
-          .tab.active {
-              color: black;
-          }
-
-          .news-container {
-            max-height: 175px;
-            overflow-y: auto;
-          }
-
-        /* Remove bullet points from the navigation list */
-        .nav {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
-
-        .nav li {
-            display: inline;
-            margin: 0 20px;
-            font-size: 18px;
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: #000;
-        }
-
-        .navbar {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .navbar hr {
-        margin: 0 10px;
-        border: none;
-        border-top: 2px solid gray;
-        }
-
-        .image-container3 {
-            position: relative;
-            display: inline-block;
-        }
-
-        .image-container3 img {
-            max-width: 100%;
-            height: auto;
-            vertical-align: middle;
-        }
-
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.7);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .overlay-text {
-            color: black;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .image-container3:hover .overlay {
-            opacity: 1;
-        }
-
-        a {
-        text-decoration: none;
-        }
-
-        a, a:visited, a:active, a:focus {
-        color: #265ed4;
-        }
-
-        body.light-theme {
-            background-color: #ffffff;
-            color: #000000;
-        }
-
-        body.dark-theme {
-            background-color: #212121;
-            color: #ffffff;
-        }
-
-        .dark-theme .fa-sun {
-            display: none;
-        }
-
-        .light-theme .fa-moon {
-            display: none;
-        }
-        </style>
-
-        <script>
-          function showEmail() {
-              var emailDiv = document.getElementById("email-display");
-              if (emailDiv.childNodes.length === 0) {
-                  var emailText = document.createTextNode("Email: junw3 [AT] cs.washington.edu");
-                  emailDiv.appendChild(emailText);
-              }
-              emailDiv.classList.toggle("visible");
-          }
-
-          function toggleTheme() {
-            const body = document.body;
-            if (body.classList.contains('dark-theme')) {
-                body.classList.remove('dark-theme');
-                body.classList.add('light-theme');
-            } else {
-                body.classList.remove('light-theme');
-                body.classList.add('dark-theme');
-            }
-          }
-
-          function showContent(id) {
-              var contents = document.querySelectorAll('.content');
-              contents.forEach(content => content.classList.remove('active'));
-
-              var tabs = document.querySelectorAll('.tab');
-              tabs.forEach(tab => tab.classList.remove('active'));
-
-              document.getElementById(id).classList.add('active');
-              document.getElementById(id + '-tab').classList.add('active');
-          }
-
-          window.onload = function() {
-            showContent('home');
-          }
-        </script>
     </head>
 
     <body class="light-theme">
-        <!-- <div class="banner">
-            <div class="tab" id="home-tab" onclick="showContent('home')"><strong>Home</strong></div>
-            <div class="tab" id="misc-tab" onclick="showContent('misc')"><strong>Misc</strong></div>
-        </div> -->
-
-        <!-- <div id="home" class="content"> -->
-        <!-- Pic and links -->
+        <!-- Bio -->
         <div class="image-container">
             <img src="Portrait.jpg" alt="self portrait" width="200" height="200" id="portrait">
             <div class="text-container">
@@ -285,27 +30,13 @@
                 <div id="email-display"></div>
             </div>
         </div>
-
-        <!-- Bio -->
         <p>👋 I am researching <strong>Human-Centered AI</strong> at <a href="https://makeabilitylab.cs.washington.edu/">Makeability Lab</a>, <strong>Embodied AI</strong> at <a href="https://raivn.cs.washington.edu/">RAIVN Lab</a>, and <strong>AI Red Teaming</strong> at <a href="https://uwalignment.org/">AI Alignment @ UW</a>. I am fortunate to be advised by Prof. <a href="https://jonfroehlich.github.io/">Jon Froehlich</a> and mentored by <a href="https://jaewook-lee.com/">Jae Lee</a> and <a href="https://duanjiafei.com/">Jiafei Duan</a>. I design and evaluate context-aware, human-centered systems that provide personalized assistance for everyday tasks and assist various accessibility communities. I am also a software team member of <a href="https://aruw.org/">ARUW</a>, a three-time RoboMaster North America Champion.</p>
         <p>🧠 Aside from academics, I enjoy refining card magic routines, crafting <a href="https://www.youtube.com/watch?v=N2aRACTmDS8">cardistry</a> flourishes, inventing Rubik's Cube algorithms, training calisthenics skills, and binge-watching podcasts.</p>
 
         <hr>
 
-        <!-- Navbar -->
-        <!-- <div class="navbar">
-            <hr>
-            <ul class="nav">
-                <li><a href="#news"><strong>News</strong></a></li>
-                <li><a href="#recommendations"><strong>Recommendations</strong></a></li>
-                <li><a href="#quotes"><strong>Quotes</strong></a></li>
-                <li><a href="#writings"><strong>Writings</strong></a></li>
-            </ul>
-            <hr>
-        </div> -->
-
         <!-- News -->
-        <h2 id="news">News</h2>
+        <h2 id="news" class="section-header">News</h2>
         <div class="news-container">
             <table>
                 <tr>
@@ -374,109 +105,31 @@
         <hr>
 
         <!-- Recommendations -->
-        <h2 id="recommendations">Recommendations</h2>
+        <h2 id="recommendations" class="section-header">Recommendations</h2>
         <ul>
             <li><strong>ML Blogs:</strong> <a href="https://lilianweng.github.io/">Lil'Log</a>, <a href="https://colah.github.io/">colah's blog</a>, <a href="https://distill.pub/">Distill</a>, <a href="http://karpathy.github.io/">Andrej Karpathy blog</a>, <a href="https://dennybritz.com/">Denny's Blog</a>, <a href="https://hai.stanford.edu/news/blog">Stanford HAI</a>, <a href="https://www.ruder.io/">ruder.io</a></li>
-
             <li><strong>Podcasts:</strong> <a href="https://www.youtube.com/@lexfridman">Lex Fridman Podcast</a>, <a href="https://www.youtube.com/@hubermanlab">Huberman Lab</a>, <a href="https://www.youtube.com/@TheRobotBrainsPodcast">The Robot Brains Podcast</a></li>
-
             <li><strong>Tools:</strong> <a href="https://www.emojisearch.app/">Emoji Search</a>, <a href="https://elicit.org/">Elicit</a>, <a href="https://paperswithcode.com/">Papers with Code</a></li>
-
             <li><strong>Movies:</strong> <a href="https://www.imdb.com/title/tt0482571/">The Prestige</a>, <a href="https://www.imdb.com/title/tt0119217/">Good Will Hunting</a>, <a href="https://www.imdb.com/title/tt1375666/">Inception</a>, <a href="https://www.imdb.com/title/tt2582802/">Whiplash</a>, <a href="https://www.imdb.com/title/tt0133093/">The Matrix</a></li>
         </ul>
 
         <hr>
 
         <!-- Quotes -->
-        <h2 id="quotes">Quotes</h2>
+        <h2 id="quotes" class="section-header">Quotes</h2>
         <ul>
             <li><strong>Marcus Tullius Cicero</strong> I criticize by creation, not by finding fault.</li>
             <li><strong>Donald Knuth</strong> Beware of bugs in the above code; I have only proved it correct, not tried it.</li>
             <li><strong>Ralph Waldo Emerson</strong> People wish to be settled; only in so far as they are unsettled is there any hope for them.</li>
             <li><strong>C.S. Lewis</strong> Humility is not thinking less of yourself, it's thinking of yourself less.</li>
-            <li><strong>HAL 9000</strong> I'm sorry Dave, I'm afraid I can't do that.</li>
         </ul>
 
         <hr>
 
-        <!-- World Map -->
-        <!-- <h2>Places I've Been (Incomplete)</h2>
-        <p align="center"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1m1hqXabBQVMJKnb3kFfCMipjFYSOTWc&ehbc=2E312F" width="640" height="480"></iframe></p> -->
-        <!-- </div> -->
-
-        <!-- Gallery -->
-        <!-- <h2>Gallery</h2>
-        <div class="image-container3">
-            <img src="img/Seattle_Cardistry.jpg" alt="Seattle Cardistry" width="320">
-            <div class="overlay">
-                <div class="overlay-text">
-                    Seattle Cardistry Jam<br>
-                    Humble Pie<br>
-                    November 2021
-                </div>
-            </div>
-        </div>
-
-        <div class="image-container3">
-            <img src="img/Quad_Portrait.jpg" alt="Quad Portrait" width="240">
-            <div class="overlay">
-                <div class="overlay-text">
-                    Self Portrait<br>
-                    The Quad<br>
-                    April 2023
-                </div>
-            </div>
-        </div>
-
-        <div class="image-container3">
-            <img src="img/ARUW_Kayaking.jpg" alt="ARUW Kayaking" width="235">
-            <div class="overlay">
-                <div class="overlay-text">
-                    ARUW Software Team Kayaking<br>
-                    Union Bay<br>
-                    September 2023
-                </div>
-            </div>
-        </div>
-
-        <div class="image-container3">
-            <img src="img/Quad_GazePointAR.jpg" alt="GazePointAR Quad" width="195">
-            <div class="overlay">
-                <div class="overlay-text">
-                    GazePointAR In The Wild<br>
-                    The Quad<br>
-                    April 2023
-                </div>
-            </div>
-        </div>
-
-        <div class="image-container3">
-            <img src="img/TMobile_Visit.JPG" alt="GazePointAR Quad" width="430">
-            <div class="overlay">
-                <div class="overlay-text">
-                    Makeability Lab Visits T-Mobile Tech Center<br>
-                    T-Mobile Tech Experience Center<br>
-                    February 2023
-                </div>
-            </div>
-        </div>
-
-        <div class="image-container3">
-            <img src="img/Fire.jpg" alt="Fireside Reflection" width="170">
-            <div class="overlay">
-                <div class="overlay-text">
-                    Fireside Reflection<br>
-                    Salish Sea<br>
-                    September 2022
-                </div>
-            </div>
-        </div>
-
-        <hr> -->
-
         <footer>
-            Last updated: 2023/10/24<br>
+            Last updated: 2023/10/29<br>
             &copy; Copyright 2023 Jun Wang
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
