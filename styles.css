@@ -230,3 +230,40 @@ body.dark-theme {
     margin-bottom: 5px;
     vertical-align: middle;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 boxes per row */
+    gap: 15px;
+}
+
+.grid-item {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.grid-item a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.grid-item img {
+    width: 100%;
+    display: block;
+}
+
+.description {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/* 2 boxes per row on smaller screens */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
