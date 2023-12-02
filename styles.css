@@ -1,5 +1,6 @@
 body {
     margin: 1em auto;
+    margin-top: 30px;
     max-width: 54em;
     font: 1em/1.5 Helvetica;
     font-family: assistant, sans-serif;
