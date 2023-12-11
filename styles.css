@@ -220,7 +220,7 @@ body.dark-theme {
     width: auto;
 }
 
-.section-header::before {
+/* .section-header::before {
     content: "";
     display: inline-block;
     background: url('hacker.png') no-repeat;
@@ -230,7 +230,7 @@ body.dark-theme {
     margin-right: 10px;
     margin-bottom: 5px;
     vertical-align: middle;
-}
+} */
 
 .grid-container {
     display: grid;
