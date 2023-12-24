@@ -6,6 +6,10 @@ body {
     font-family: assistant, sans-serif;
 }
 
+#intro {
+    font-size: large;
+}
+
 h1, h2, h3 {
     line-height: 1.5;
     font-family: sans-serif;
