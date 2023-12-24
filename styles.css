@@ -268,3 +268,13 @@ body.dark-theme {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.news-container::-webkit-scrollbar {
+    display: none;
+}
+
+.news-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-y: scroll;
+}
