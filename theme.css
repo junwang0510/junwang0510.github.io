@@ -1,0 +1,127 @@
+@import "https://unpkg.com/open-props/easings.min.css";
+
+.theme-toggle-container {
+  position: relative;
+  max-width: 54em;
+  margin: 0 auto;
+}
+
+.theme-toggle {
+  --size: 2rem;
+  --icon-fill: hsl(210, 10%, 30%);
+  --icon-fill-hover: hsl(210, 10%, 15%);
+  background: none;
+  border: none;
+  padding: 0;
+  width: var(--size);
+  height: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  outline-offset: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.theme-toggle > svg {
+  width: 100%;
+  height: 100%;
+  stroke-linecap: round;
+}
+
+/* Light and Dark Theme Styles */
+[data-theme="light"] {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+[data-theme="light"] a,
+[data-theme="light"] a:visited,
+[data-theme="light"] a:active,
+[data-theme="light"] a:focus {
+  color: #00008B;
+}
+
+[data-theme="dark"] {
+  background-color: #18191A;
+  color: #dee2e6;
+}
+
+[data-theme="dark"] a,
+[data-theme="dark"] a:visited,
+[data-theme="dark"] a:active,
+[data-theme="dark"] a:focus {
+  color: #74c0fc;
+}
+
+[data-theme="dark"] .theme-toggle {
+  --icon-fill: hsl(210, 10%, 70%);
+  --icon-fill-hover: hsl(210, 15%, 90%);
+}
+
+/* Sun and Moon Toggle Styles */
+.sun-and-moon > :is(.moon, .sun, .sun-beams) {
+  transform-origin: center center;
+}
+
+.sun-and-moon > :is(.moon, .sun) {
+  fill: var(--icon-fill);
+}
+
+.theme-toggle:hover > .sun-and-moon > :is(.moon, .sun),
+.theme-toggle:focus-visible > .sun-and-moon > :is(.moon, .sun) {
+  fill: var(--icon-fill-hover);
+}
+
+.sun-and-moon > .sun-beams {
+  stroke: var(--icon-fill);
+  stroke-width: 2px;
+}
+
+.theme-toggle:hover > .sun-and-moon > .sun-beams,
+.theme-toggle:focus-visible > .sun-and-moon > .sun-beams {
+  stroke: var(--icon-fill-hover);
+}
+
+/* Dark Theme Sun and Moon Adjustments */
+[data-theme="dark"] .sun-and-moon > .sun {
+  transform: scale(1.75);
+}
+
+[data-theme="dark"] .sun-and-moon > .sun-beams {
+  opacity: 0;
+}
+
+[data-theme="dark"] .sun-and-moon > .moon > circle {
+  transform: translateX(-7px);
+}
+
+/* Transitions for Reduced Motion Preference */
+@media (prefers-reduced-motion: no-preference) {
+  .sun-and-moon > :is(.moon, .sun), .sun-and-moon > .sun-beams {
+    transition: transform 0.5s var(--ease-elastic-3), opacity 0.5s ease;
+  }
+
+  [data-theme="light"] .sun-and-moon > .moon > circle {
+    transform: translateX(0);
+  }
+
+  [data-theme="light"] .sun-and-moon > .sun {
+    transform: scale(1);
+  }
+
+  [data-theme="light"] .sun-and-moon > .sun-beams {
+    opacity: 1;
+  }
+
+  [data-theme="dark"] .sun-and-moon > .sun {
+    transition: transform 0.25s var(--ease-3);
+  }
+
+  [data-theme="dark"] .sun-and-moon > .sun-beams {
+    transition: opacity 0.15s ease;
+  }
+}

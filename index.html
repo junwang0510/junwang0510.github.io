@@ -7,11 +7,36 @@
         <title>Jun Wang</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Open+Sans:ital,wght@1,300&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300&family=Share+Tech+Mono&family=Sigmar&display=swap" rel="stylesheet">
+        <script src="theme.js"></script>
     </head>
 
     <body>
+        <!-- Theme toggle -->
+        <div class="theme-toggle-container">
+            <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+                <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                    <mask class="moon" id="moon-mask">
+                        <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                        <circle cx="24" cy="10" r="6" fill="black" />
+                    </mask>
+                    <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                    <g class="sun-beams" stroke="currentColor">
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                    </g>
+                </svg>
+            </button>
+        </div>
+
         <!-- Bio -->
         <div class="image-container">
             <img src="profile.jpg" alt="self portrait" width="200" height="200" id="portrait">
@@ -28,7 +53,7 @@
                 </p>
             </div>
         </div>
-        <p id="intro"><span id="handwave">👋</span>I research Human-Centered AI and Human-Robot Interaction, advised by Prof. <a href="https://jonfroehlich.github.io/">Jon Froehlich</a> and mentored by <a href="https://jaewook-lee.com/">Jae Lee</a> and <a href="https://duanjiafei.com/">Jiafei Duan</a>. My work focuses on designing and evaluating context-aware, multimodal, human-centered systems that provide personalized assistance for everyday tasks and assist various accessibility groups. Outside academia, I enjoy refining card magic routines, crafting <a href="https://www.youtube.com/watch?v=N2aRACTmDS8">cardistry</a> flourishes, inventing Rubik's Cube algorithms, training calisthenics skills, and binge-watching podcasts.</p>
+        <p id="intro"><span id="handwave">👋🏻</span>I research Human-Centered AI and Human-Robot Interaction, advised by Prof. <a href="https://jonfroehlich.github.io/">Jon Froehlich</a> and mentored by <a href="https://jaewook-lee.com/">Jae Lee</a> and <a href="https://duanjiafei.com/">Jiafei Duan</a>. My work focuses on designing and evaluating context-aware, multimodal, human-centered systems that provide personalized assistance for everyday tasks and assist various accessibility groups. Outside academia, I enjoy refining card magic routines, crafting <a href="https://www.youtube.com/watch?v=N2aRACTmDS8">cardistry</a> flourishes, inventing Rubik's Cube algorithms, training calisthenics skills, and binge-watching podcasts.</p>
         <p>Current affiliations: <a href="https://www.cs.washington.edu/">UW CSE</a>, <a href="https://makeabilitylab.cs.washington.edu/">Makeability Lab</a>, <a href="https://raivn.cs.washington.edu/">RAIVN Lab</a></p>
 
         <hr>
