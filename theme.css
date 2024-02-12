@@ -38,16 +38,16 @@
   color: #000000;
 }
 
+[data-theme="dark"] {
+  background-color: #18191A;
+  color: #dee2e6;
+}
+
 [data-theme="light"] a,
 [data-theme="light"] a:visited,
 [data-theme="light"] a:active,
 [data-theme="light"] a:focus {
   color: #00008B;
-}
-
-[data-theme="dark"] {
-  background-color: #18191A;
-  color: #dee2e6;
 }
 
 [data-theme="dark"] a,
@@ -60,6 +60,18 @@
 [data-theme="dark"] .theme-toggle {
   --icon-fill: hsl(210, 10%, 70%);
   --icon-fill-hover: hsl(210, 15%, 90%);
+}
+
+[data-theme="light"] #portrait {
+  border-radius: 5px;
+  box-shadow: -10px -10px 0px #ADD8E6;
+  z-index: 1;
+}
+
+[data-theme="dark"] #portrait {
+  border-radius: 5px;
+  box-shadow: -10px -10px 0px #2B35AF;
+  z-index: 1;
 }
 
 /* Sun and Moon Toggle Styles */
