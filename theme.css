@@ -62,18 +62,6 @@
   --icon-fill-hover: hsl(210, 15%, 90%);
 }
 
-[data-theme="light"] #portrait {
-  border-radius: 5px;
-  box-shadow: -10px -10px 0px #ADD8E6;
-  z-index: 1;
-}
-
-[data-theme="dark"] #portrait {
-  border-radius: 5px;
-  box-shadow: -10px -10px 0px #2B35AF;
-  z-index: 1;
-}
-
 /* Sun and Moon Toggle Styles */
 .sun-and-moon > :is(.moon, .sun, .sun-beams) {
   transform-origin: center center;

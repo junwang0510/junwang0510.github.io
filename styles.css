@@ -1,9 +1,7 @@
 body {
   margin: 30px auto;
   max-width: 54em;
-  font: 1em/1.5 Helvetica;
-  /* color: #dee2e6;
-  background-color: #18191A; */
+  font: 1em/1.5 Helvetica, sans-serif;
 }
 
 h1, h2 {
@@ -11,7 +9,7 @@ h1, h2 {
 }
 
 body, h1, h2 {
-  font-family: 'Assistant', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 li {
@@ -87,6 +85,10 @@ a,
 
 #intro {
   font-size: large;
+}
+
+#portrait {
+  border-radius: 5px;
 }
 
 #contact-icons a,
