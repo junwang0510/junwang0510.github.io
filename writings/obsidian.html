@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jun Wang">
+    <title>Obsidian for Note-Taking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Obsidian for Note-Taking</h1>
+    <p>
+        I use <a href="https://obsidian.md/">Obsidian</a> for personal notes, primarily because:
+        <ul>
+            <li>I subscribe to Steph Ango's view on software (e.g., <a href="https://stephango.com/file-over-app">File over app</a>, <a href="https://stephango.com/vcware">100% user-supported</a>).</li>
+            <li>It is free of any user-hostile dark patterns.</li>
+            <li>It has an extensive plugin ecosystem and high composability with any other tools I wish to use.</li>
+            <li>I like to write in markdown and value <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a>.</li>
+        </ul>
+        Despite the pros, many end users struggle with syncing personal notes across devices without paying fees to cover server costs. Thus, I'm sharing a free, simple solution that uses git (many online tutorials are needlessly long):
+        <ol>
+            <li>Create a repository on <a href="https://github.com/">github</a>.</li>
+            <li>Generate and copy a <a href="https://github.com/settings/tokens">github personal access token (classic)</a> (set expiration=no expiration, scope=repo).</li>
+            <li>Install the git community plugin in Obsidian.</li>
+            <li>Create a folder to store the remote repository.</li>
+            <li>Ctrl/Command + p &rarr; Git: clone an existing remote repo</li>
+            <li>URL format: https://&lt;PERSONAL_ACCESS_TOKEN&gt;@github.com/&lt;USERNAME&gt;/&lt;REPO&gt;.git</li>
+            <li>Type in the folder name to sync with the remote repo.</li>
+            <li>Restart Obsidian.</li>
+            <li>Make edits.</li>
+            <li>Ctrl/Command + p &rarr; Git: create backup</li>
+        </ol>
+    </p>
+    <footer>
+        <a href="../index.html">Back to Home</a><br>
+        &copy; 2024 Jun Wang
+    </footer>
+</body>
+</html>
