@@ -39,7 +39,7 @@
 
         <!-- Bio -->
         <div class="image-container">
-            <img src="profile.jpg" alt="self portrait" width="200" height="200" id="portrait">
+            <img src="Images/profile.jpg" alt="self portrait" width="200" height="200" id="portrait">
             <div class="text-container">
                 <h1>Jun Wang &nbsp; 王骏 &nbsp; おうしゅん</h1>
                 <p>Computer Science Undergraduate @ University of Washington</p>
@@ -50,12 +50,15 @@
                     <a href="https://www.linkedin.com/in/junwang0510/"><i class="fab fa-linkedin larger-icon"></i></a>&nbsp;&nbsp;&nbsp;
                     <a href="https://twitter.com/JunWang75215513"><i class="fab fa-x-twitter larger-icon"></i></a>&nbsp;&nbsp;&nbsp;
                     <a href="https://www.instagram.com/junie_wangy/"><i class="fab fa-instagram larger-icon"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="javascript:void(0);" onclick="openNewTab()">
+                        <i class="fab fa-weixin larger-icon"></i>
+                    </a>
                 </p>
             </div>
         </div>
         <p id="intro"><span id="handwave">👋🏻</span>I research Human-Centered AR and AI under the supervision of Prof. <a href="https://jonfroehlich.github.io/">Jon Froehlich</a> and Prof. <a href="https://ranjaykrishna.com/index.html">Ranjay Krishna</a>, mentored by <a href="https://jaewook-lee.com/">Jaewook Lee</a> and <a href="https://duanjiafei.com/">Jiafei Duan</a>. My work focuses on designing and evaluating context-aware, multimodal, human-centered systems that provide personalized assistance for everyone.</p>
 
-        <p id="intro">Outside academia, I enjoy refining card magic routines, crafting <a href="https://www.youtube.com/watch?v=N2aRACTmDS8">cardistry</a> flourishes, inventing Rubik's Cube algorithms, training calisthenics skills, and binge-watching podcasts.</p>
+        <p id="intro">Outside academia, I greatly enjoy card magic, cardistry, cubing, calisthenics, and chess.</p>
         <p>Current affiliations: <a href="https://hai.stanford.edu/">Stanford HAI</a>, <a href="https://www.cs.washington.edu/">UW CSE</a>, <a href="https://makeabilitylab.cs.washington.edu/">Makeability Lab</a>, <a href="https://raivn.cs.washington.edu/">RAIVN Lab</a>, <a href="https://huskylink.washington.edu/organization/xra">UW XRA</a></p>
 
         <hr>
@@ -206,16 +209,45 @@
 
         <hr>
 
-        <!-- Selected Publications -->
-        <!-- <h2 id="publications" class="section-header">Selected Publications</h2>
+        <!-- Publications -->
+        <h2 id="publications" class="section-header">Selected Publications</h2>
         <ul>
+            <li class="publication-item">
+                <img src="Images/EVE.png" alt="EVE logo" class="publication-img">
+                <div class="publication-text">
+                    <strong>EVE: Enabling Anyone to Train Robots using Augmented Reality</strong><br>
+                    <u>Jun Wang</u>, <a href="https://www.linkedin.com/in/chun-cheng-chang-28b49a223/">Chun-Cheng Chang</a>, <a href="https://duanjiafei.com/">Jiafei Duan</a>, <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>, <a href="https://ranjaykrishna.com/index.html">Ranjay Krishna</a><br>
+                    <i>UIST 2024 | Acceptance Rate: 24.0% (146/608)</i><br>
+                    [<a href="https://arxiv.org/pdf/2404.06089">PDF</a>] [<a href="https://junwang0510.github.io/EVE/">Website</a>]<br>
+                    EVE is an iOS app that enables everyday users to train robots using intuitive augmented reality visualizations, without needing a physical robot.
+                </div>
+            </li>
+            <li class="publication-item">
+                <img src="Images/gazepointar.png" alt="GazePointAR logo"class="publication-img">
+                <div class="publication-text">
+                    <strong>GazePointAR: A Context-Aware Multimodal Voice Assistant for Pronoun Disambiguation in Wearable Augmented Reality</strong><br>
+                    <a href="https://jaewook-lee.com/">Jaewook Lee</a>, <u>Jun Wang</u>, <a href="https://www.linkedin.com/in/libbey-gollhofer-brown/">Elizabeth Brown</a>, <a href="https://www.linkedin.com/in/liam-gene-ping-chu-495760254/">Liam Chu</a>, <a href="https://www.linkedin.com/in/srodriguez1850/">Sebastian S. Rodriguez</a>, <a href="https://jonfroehlich.github.io/">Jon E. Froehlich</a><br>
+                    <i>CHI 2024 | Acceptance Rate: 26.3% (1060 / 4028)</i><br>
+                    [<a href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642230">PDF</a>] [<a href="https://www.youtube.com/watch?v=HqONUCJM6Zg">Video</a>]<br>
+                    GazePointAR is a context-aware VA for wearable augmented reality that leverages eye gaze, pointing gestures, and conversation history to disambiguate speech queries.
+                </div>
+            </li>
+            <li class="publication-item">
+                <img src="Images/artennis.png" alt="ARTennis logo" class="publication-img">
+                <div class="publication-text">
+                    <strong>Towards Real-time Computer Vision and Augmented Reality to Support Low Vision Sports: A Demonstration of ARTennis</strong><br>
+                    <a href="https://jaewook-lee.com/">Jaewook Lee</a>, <a href="https://www.linkedin.com/in/devesh-sarda-172aa9175/">Devesh Sarda</a>, <a href="https://linkedin.com/in/eujean-lee-b2316b1bb/">Eujean Lee</a>, <a href="https://www.linkedin.com/in/seunghyun-amy-lee/">Amy S. Lee</a>, <u>Jun Wang</u>, <a href="https://www.linkedin.com/in/studiorodriguez/">Adrian Rodriguez</a>, <a href="https://jonfroehlich.github.io/">Jon E. Froehlich</a><br>
+                    <i>UIST 2023 Adjunct</i><br>
+                    [<a href="https://dl.acm.org/doi/pdf/10.1145/3586182.3615815">PDF</a>] [<a href="https://www.youtube.com/watch?v=6vzKfrM7Y_Y">Video</a>]<br>
+                    ARTennis is a prototype for wearable augmented reality that utilizes real-time computer vision to enhance the visual saliency of tennis balls.
+                </div>
+            </li>
         </ul>
-
-        <hr> -->
+        <hr>
 
         <footer>
             <a href="https://github.com/junwang0510/junwang0510.github.io">Source code</a><br>
-            Last updated: July 2024<br>
+            Last updated: August 2024<br>
             &copy; 2024 Jun Wang
         </footer>
     </body>
