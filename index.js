@@ -20,4 +20,9 @@ function assignColorBlocks() {
     }
 }
 
-window.onload = assignColorBlocks;
+function init() {
+    assignColorBlocks();
+}
+
+window.addEventListener('load', init);
+

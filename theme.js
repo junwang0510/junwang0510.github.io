@@ -38,12 +38,13 @@ const theme = {
 // set early so no page flashes / CSS is made aware
 reflectPreference()
 
-window.onload = () => {
-  reflectPreference()
+// Ensure both functions run on window load
+window.addEventListener('load', () => {
+  reflectPreference();
   document
     .querySelector('#theme-toggle')
-    .addEventListener('click', onClick)
-}
+    .addEventListener('click', onClick);
+});
 
 // sync with system changes
 window
