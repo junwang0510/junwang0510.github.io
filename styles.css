@@ -135,3 +135,13 @@ a,
   flex-grow: 1;
   min-width: 0;
 }
+
+.color-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
+}
+
+.color_block {
+  background: rgb(0,0,0);
+}
