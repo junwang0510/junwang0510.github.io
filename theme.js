@@ -60,9 +60,3 @@ document.addEventListener('DOMContentLoaded', function() {
     link.setAttribute('target', '_blank');
   });
 });
-
-function openNewTab() {
-  const newWindow = window.open('', '_blank');
-  newWindow.document.write('<p style="font-size: 24px;">WeChat ID: junwang111111110</p>');
-  newWindow.document.close();
-}
