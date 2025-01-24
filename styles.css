@@ -2,6 +2,8 @@ body {
   margin: 40px auto;
   max-width: 54em;
   font: 1em/1.5 Helvetica, sans-serif;
+  background-color: (255, 255, 0, 0.3);
+  color: #000;
 }
 
 h1, h2 {
@@ -27,7 +29,7 @@ hr {
 }
 
 a, a:visited, a:active, a:focus {
-  color: #74c0fc;
+  color: #00008B;
 }
 
 table tr td {
