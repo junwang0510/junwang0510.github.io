@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Jun Wang">
+        <meta name="description" content="Books Page">
+        <title>Books</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: #f9f9f9;
+                margin: 0;
+                padding: 20px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .content-container {
+                max-width: 750px;
+                width: 100%;
+            }
+
+            .book-item {
+                display: flex;
+                align-items: flex-start;
+                background: #fff;
+                padding: 25px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .book-item img {
+                width: 140px;
+                height: auto;
+                margin-right: 20px;
+                border-radius: 5px;
+            }
+
+            .book-details {
+                text-align: left;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .book-title {
+                font-weight: bold;
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+
+            .book-author {
+                font-style: italic;
+                font-size: 1.1em;
+                margin-bottom: 10px;
+            }
+
+            .book-meta {
+                font-size: 1em;
+                color: #555;
+                margin-bottom: 15px;
+            }
+
+            .book-info {
+                line-height: 1.8;
+                font-size: 1em;
+                color: #333;
+            }
+        </style>
+    </head>
+<body>
+    <h1>Books</h1>
+    <div class="content-container">
+        <div class="book-item">
+            <img src="https://m.media-amazon.com/images/I/71f1jieYHNL.jpg" alt="The Pragmatic Programmer">
+            <div class="book-details">
+                <div class="book-title">The Pragmatic Programmer</div>
+                <div class="book-author">David Thomas, Andrew Hunt</div>
+                <div class="book-meta">Genre: Software Engineering • Time: January 2025 • Rating: 8/10</div>
+                <div class="book-info">Read this to prepare for my role as a software engineer. Learned many practical lessons, such as how to provide task estimates, considerations before writing code, and debugging checklists.</div>
+            </div>
+        </div>
+
+        <div class="book-item">
+            <img src="https://m.media-amazon.com/images/I/51zGCdRQXOL._AC_UF1000,1000_QL80_.jpg" alt="Zero to One">
+            <div class="book-details">
+                <div class="book-title">Zero to One: Notes on Startups, or How to Build the Future</div>
+                <div class="book-author">Peter Thiel, Blake Masters</div>
+                <div class="book-meta">Genre: Entrepreneurship • Time: January 2025 • Rating: 8/10</div>
+                <div class="book-info">A peek into the mind of a definite optimist. A lot of contrarian truths in this book.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
