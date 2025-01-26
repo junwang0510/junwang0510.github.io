@@ -20,9 +20,17 @@ function assignColorBlocks() {
     }
 }
 
+function makeLinksOpenInNewTab() {
+    const links = document.querySelectorAll("a");
+    links.forEach(link => link.setAttribute("target", "_blank"));
+}
+
 function init() {
     assignColorBlocks();
 }
 
-window.addEventListener('load', init);
+window.addEventListener('load', () => {
+    init();
+    makeLinksOpenInNewTab();
+});
 
