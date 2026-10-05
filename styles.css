@@ -2,11 +2,10 @@ body {
   margin: 40px auto;
   max-width: 54em;
   font: 0.95em/1.5 'Roboto', sans-serif;
-  color: #000;
 }
 
 h1, h2 { margin-bottom: 5px; }
-li { margin: 1em auto; }
+li { margin: 1em 0; }
 footer { font-size: small; }
 
 a { color: #00008B; text-decoration: none; }
@@ -17,7 +16,7 @@ a { color: #00008B; text-decoration: none; }
 td { padding-top: 10px; padding-bottom: 10px; }
 td:first-child { padding-right: 20px; }
 
-.image-container { display: flex; align-items: flex-start; margin-left: 100px; }
+.image-container { display: flex; margin-left: 100px; }
 .text-container { flex: 1; text-align: center; }
 #portrait { border-radius: 5px; }
 
@@ -38,9 +37,9 @@ td:first-child { padding-right: 20px; }
   40% { transform: rotate(9deg); }
 }
 
-.publication-item { display: flex; align-items: flex-start; margin-bottom: 20px; }
+.publication-item { display: flex; margin-bottom: 20px; }
 .publication-img { width: 100px; margin-right: 20px; align-self: center; border-radius: 10px; }
-.publication-text { flex: 1; min-width: 0; }
+.publication-text { flex: 1; }
 
 .color-line { display: flex; justify-content: space-between; margin: 2em 0; }
 .color-line div { height: 6px; }
